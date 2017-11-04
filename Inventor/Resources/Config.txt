@@ -1,0 +1,6 @@
+{
+  "autoSave": true,
+  "images": "images/",
+  "thumbs": "thumbs/",
+  "data": "data/"
+}

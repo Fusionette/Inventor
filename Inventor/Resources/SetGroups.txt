@@ -1,0 +1,310 @@
+[
+  {
+    "displayName": "Accurate Defense Debuff",
+    "groupName": "P1905706306",
+    "boostsAllowed": "kDebuff_Defense_Boost",
+    "conversionGroup": "ECAccurateDefenseDebuff",
+    "include": "Accurate_Defense_Debuff_Powers"
+  },
+  {
+    "displayName": "Accurate Healing",
+    "groupName": "P500425294",
+    "boostsAllowed": "kHeal_Boost",
+    "conversionGroup": "ECAccurateHealing",
+    "include": "Accurate_Healing_Powers"
+  },
+  {
+    "displayName": "Accurate To-Hit Debuff",
+    "groupName": "P1019748334",
+    "boostsAllowed": "kDebuff_ToHit_Boost",
+    "conversionGroup": "ECAccurateToHitDebuff",
+    "include": "Accurate_ToHit_Debuff_Powers"
+  },
+  {
+    "displayName": "Confuse",
+    "groupName": "P1943204847",
+    "boostsAllowed": "kConfuse_Boost",
+    "conversionGroup": "ECConfuse",
+    "include": "Confuse_Powers"
+  },
+  {
+    "displayName": "Defense Debuff",
+    "groupName": "P664228037",
+    "boostsAllowed": "kDebuff_Defense_Boost",
+    "conversionGroup": "ECDefenseDebuff",
+    "include": "Defense_Debuff_Powers"
+  },
+  {
+    "displayName": "Defense",
+    "groupName": "P642123166",
+    "boostsAllowed": "kBuff_Defense_Boost",
+    "conversionGroup": "ECDefense",
+    "include": "Defense_Powers"
+  },
+  {
+    "displayName": "Endurance Modification",
+    "groupName": "P1327380731",
+    "boostsAllowed": "kRecovery_Boost",
+    "conversionGroup": "ECEnduranceModification",
+    "include": "EndMod_Powers"
+  },
+  {
+    "displayName": "Fear",
+    "groupName": "P2710656193",
+    "boostsAllowed": "kFear_Boost",
+    "conversionGroup": "ECFear",
+    "include": "Fear_Powers"
+  },
+  {
+    "displayName": "Flight",
+    "groupName": "P1824032808",
+    "boostsAllowed": "kSpeedFlying_Boost",
+    "conversionGroup": "ECFlight",
+    "include": "Flight_Powers"
+  },
+  {
+    "displayName": "Healing",
+    "groupName": "P220831749",
+    "boostsAllowed": "kHeal_Boost",
+    "conversionGroup": "ECHealing",
+    "include": "Healing_Powers"
+  },
+  {
+    "displayName": "Holds",
+    "groupName": "P3531333568",
+    "boostsAllowed": "kHold_Boost",
+    "conversionGroup": "ECHold",
+    "include": "Hold_Powers"
+  },
+  {
+    "displayName": "Immobilize",
+    "groupName": "P529984861",
+    "boostsAllowed": "kImmobilized_Boost",
+    "conversionGroup": "ECImmobilize",
+    "include": "Immobilize_Powers"
+  },
+  {
+    "displayName": "Knockback",
+    "groupName": "P4021946583",
+    "boostsAllowed": "kKnockback_Boost",
+    "conversionGroup": "ECKnockback",
+    "include": "Knockback_Powers"
+  },
+  {
+    "displayName": "Leaping",
+    "groupName": "P745788540",
+    "boostsAllowed": "kJump_Boost",
+    "conversionGroup": "ECLeaping",
+    "include": "Jump_Powers"
+  },
+  {
+    "displayName": "Melee Damage",
+    "groupName": "P616951717",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECMelee",
+    "include": "Melee_Damage_Powers"
+  },
+  {
+    "displayName": "PBAoE Damage",
+    "groupName": "P1671220172",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECMeleeAoE",
+    "include": "Melee_AoE_Powers"
+  },
+  {
+    "displayName": "Pet Damage",
+    "groupName": "P2234567739",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECPetDamage",
+    "include": "Pet_Powers"
+  },
+  {
+    "displayName": "Ranged Damage",
+    "groupName": "P2223860936",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECRanged",
+    "include": "Ranged_Damage_Powers"
+  },
+  {
+    "displayName": "Recharge Intensive Pets",
+    "groupName": "P3840077829",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECRechargeIntensivePets",
+    "include": "Recharge_Pets_Powers"
+  },
+  {
+    "displayName": "Resist Damage",
+    "groupName": "P42300052",
+    "boostsAllowed": "kRes_Damage_Boost",
+    "conversionGroup": "ECResist",
+    "include": "Damage_Resistance_Powers"
+  },
+  {
+    "displayName": "Running",
+    "groupName": "P203092125",
+    "boostsAllowed": "kSpeedRunning_Boost",
+    "conversionGroup": "ECRunning",
+    "include": "Running_Powers"
+  },
+  {
+    "displayName": "Sleep",
+    "groupName": "P2871861558",
+    "boostsAllowed": "kSleep_Boost",
+    "conversionGroup": "ECSleep",
+    "include": "Sleep_Powers"
+  },
+  {
+    "displayName": "Slow Movement",
+    "groupName": "P3129357468",
+    "boostsAllowed": "kSlow_Boost",
+    "conversionGroup": "ECSlow",
+    "include": "Movement_Slow_Powers"
+  },
+  {
+    "displayName": "Sniper Attacks",
+    "groupName": "P771149067",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECSniper",
+    "include": "Sniper_Powers"
+  },
+  {
+    "displayName": "Stuns",
+    "groupName": "P2363233992",
+    "boostsAllowed": "kStunned_Boost",
+    "conversionGroup": "ECStun",
+    "include": "Disorient_Powers"
+  },
+  {
+    "displayName": "Targeted AoE Damage",
+    "groupName": "P3502029540",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECTargetedAoE",
+    "include": "Ranged_AoE_Powers"
+  },
+  {
+    "displayName": "Taunt",
+    "groupName": "P1989716037",
+    "boostsAllowed": "kTaunt_Boost",
+    "conversionGroup": "ECTaunt",
+    "include": "Taunt_Powers"
+  },
+  {
+    "displayName": "Teleport",
+    "groupName": "P1483340788",
+    "boostsAllowed": "kRange_Boost",
+    "conversionGroup": "ECTeleport",
+    "include": "Teleportation_Powers"
+  },
+  {
+    "displayName": "To Hit Buff",
+    "groupName": "P242233904",
+    "boostsAllowed": "kBuff_ToHit_Boost",
+    "conversionGroup": "ECToHitBuff",
+    "include": "ToHit_Buff_Powers"
+  },
+  {
+    "displayName": "To Hit Debuff",
+    "groupName": "P272022069",
+    "boostsAllowed": "kDebuff_ToHit_Boost",
+    "conversionGroup": "ECToHitDeBuff",
+    "include": "ToHit_Debuff_Powers"
+  },
+  {
+    "displayName": "Universal Damage",
+    "groupName": "P2765653189",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECUniversalDamage",
+    "include": "Universal_Damage_Powers"
+  },
+  {
+    "displayName": "Universal Travel",
+    "groupName": "P1446595715",
+    "boostsAllowed": "kRange_Boost, kSpeedrunning_Boost, kJump_Boost, kSpeedFlying_Boost",
+    "conversionGroup": "ECUniversalTravel",
+    "include": "Universal_Travel_Powers"
+  },
+  {
+    "displayName": "Blaster Archetype",
+    "groupName": "P2249135353",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECBlaster",
+    "include": "Blaster_Archetype_Sets"
+  },
+  {
+    "displayName": "Brute Archetype",
+    "groupName": "P3956005688",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECBrute",
+    "include": "Brute_Archetype_Sets"
+  },
+  {
+    "displayName": "Controller Archetype",
+    "groupName": "P3307912099",
+    "boostsAllowed": "kHold_Boost, kConfuse_Boost, kFear_Boost, kSleep_Boost, kStunned_Boost, kImmobilized_Boost",
+    "conversionGroup": "ECController",
+    "include": "Controller_Archetype_Sets"
+  },
+  {
+    "displayName": "Corruptor Archetype",
+    "groupName": "P124561899",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECCorruptor",
+    "include": "Corruptor_Archetype_Sets"
+  },
+  {
+    "displayName": "Defender Archetype",
+    "groupName": "P807208903",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECDefender",
+    "include": "Defender_Archetype_Sets"
+  },
+  {
+    "displayName": "Dominator Archetype",
+    "groupName": "P120307868",
+    "boostsAllowed": "kHold_Boost, kConfuse_Boost, kFear_Boost, kSleep_Boost, kStunned_Boost, kImmobilized_Boost",
+    "conversionGroup": "ECDominator",
+    "include": "Dominator_Archetype_Sets"
+  },
+  {
+    "displayName": "Kheldian Archetype",
+    "groupName": "P571553260",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECKheldian",
+    "include": "Kheldian_Archetype_Sets"
+  },
+  {
+    "displayName": "Mastermind Archetype",
+    "groupName": "P2483818269",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECMastermind",
+    "include": "Mastermind_Archetype_Sets"
+  },
+  {
+    "displayName": "Scrapper Archetype",
+    "groupName": "P1998534311",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECScrapper",
+    "include": "Scrapper_Archetype_Sets"
+  },
+  {
+    "displayName": "Soldiers of Arachnos Archetype",
+    "groupName": "P2611858036",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECArachnos",
+    "include": "SoldiersofArachnos_Archetype_Sets"
+  },
+  {
+    "displayName": "Stalker Archetype",
+    "groupName": "P3225314016",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECStalker",
+    "include": "Stalker_Archetype_Sets"
+  },
+  {
+    "displayName": "Tanker Archetype",
+    "groupName": "P3922535310",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECTanker",
+    "include": "Tanker_Archetype_Sets"
+  }
+]

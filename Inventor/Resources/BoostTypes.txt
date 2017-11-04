@@ -1,0 +1,478 @@
+[
+  {
+    "displayName": "Accuracy",
+    "description": "Enhances accuracy by {Boost.Attrib.Accuracy.Scale}%.",
+    "attribMods": [
+      [
+        {
+          "name": "Accuracy",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAccuracy",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Accuracy",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAccuracy",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Accuracy",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAccuracy",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Accuracy",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAccuracy",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "displayName": "Damage",
+    "description": "Enhances damage by {Boost.Attrib.Damage.Scale}%.",
+    "attribMods": [
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSmashing",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kLethal",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kFire",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kCold",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnergy",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kNegative_Energy",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kToxic",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kPsionic",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSmashing",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kLethal",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kFire",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kCold",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnergy",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kNegative_Energy",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kToxic",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kPsionic",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSmashing",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kLethal",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kFire",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kCold",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnergy",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kNegative_Energy",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kToxic",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kPsionic",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSmashing",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kLethal",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kFire",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kCold",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnergy",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kNegative_Energy",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kToxic",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kPsionic",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "displayName": "Endurance",
+    "description": "Reduces endurance cost by {Boost.Attrib.Endurance.Scale}%.",
+    "attribMods": [
+      [
+        {
+          "name": "Endurance",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnduranceDiscount",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Endurance",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnduranceDiscount",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Endurance",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnduranceDiscount",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Endurance",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnduranceDiscount",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "displayName": "Knockback",
+    "description": "Increases knockback distance by {Boost.Attrib.Knockback.Scale}%.",
+    "attribMods": [
+      [
+        {
+          "name": "Knockback",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockback",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_60",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockup",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Knockback",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockback",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_60",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockup",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Knockback",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockback",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_60",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockup",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Knockback",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockback",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_60",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockup",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "displayName": "Recharge",
+    "description": "Increases recharge rate by {Boost.Attrib.Recharge.Scale}%.",
+    "attribMods": [
+      [
+        {
+          "name": "Recharge",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRechargeTime",
+          "scale": "1.000"
+        }
+      ],
+      [
+        {
+          "name": "Recharge",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRechargeTime",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Recharge",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRechargeTime",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Recharge",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRechargeTime",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "displayName": "Knockback to Knockdown",
+    "description": "Converts any Knockback this power deals into Knockdown. Some powers may have their chance to Knockdown reduced when this enhancement is slotted.",
+    "attribMods": [
+      [
+        {
+          "name": "KnockConvert",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockback",
+          "scale": "-10.0000"
+        },
+        {
+          "name": "KnockConvert",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockup",
+          "scale": "-10.0000"
+        },
+        {
+          "name": "Ones",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kPowerchanceMod",
+          "scale": "-1",
+          "reward": "ReduceIfKD"
+        }
+      ],
+      [
+        {
+          "name": "KnockConvert",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockback",
+          "scale": "-10.0000"
+        },
+        {
+          "name": "KnockConvert",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockup",
+          "scale": "-10.0000"
+        },
+        {
+          "name": "Ones",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kPowerchanceMod",
+          "scale": "-1",
+          "reward": "ReduceIfKD"
+        }
+      ],
+      [
+        {
+          "name": "KnockConvert",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockback",
+          "scale": "-10.0000"
+        },
+        {
+          "name": "KnockConvert",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockup",
+          "scale": "-10.0000"
+        },
+        {
+          "name": "Ones",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kPowerchanceMod",
+          "scale": "-1",
+          "reward": "ReduceIfKD"
+        }
+      ],
+      [
+        {
+          "name": "KnockConvert",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockback",
+          "scale": "-10.0000"
+        },
+        {
+          "name": "KnockConvert",
+          "table": "Melee_Boosts_60",
+          "attrib": "kKnockup",
+          "scale": "-10.0000"
+        },
+        {
+          "name": "Ones",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kPowerchanceMod",
+          "scale": "-1",
+          "reward": "ReduceIfKD"
+        }
+      ]
+    ]
+  }
+]
