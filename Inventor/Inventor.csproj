@@ -83,6 +83,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salvage.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +200,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Inventor.ico" />
+    <None Include="Resources\Salvage.txt" />
     <None Include="Resources\Config.txt" />
   </ItemGroup>
   <ItemGroup>

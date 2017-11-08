@@ -16,6 +16,7 @@ namespace Inventor
 		BoostSetData boostSet = new BoostSetData();
 		List<SetGroup> setGroups;
 		List<BoostType> boostTypes;
+		List<Salvage> salvage;
 		List<int> craftingCost;
 
 		public Form1()
@@ -24,6 +25,7 @@ namespace Inventor
 			config = JsonConvert.DeserializeObject<Config>(LoadConfig("Config", Properties.Resources.Config));
 			setGroups = JsonConvert.DeserializeObject<List<SetGroup>>(LoadConfig("SetGroups", Properties.Resources.SetGroups));
 			boostTypes = JsonConvert.DeserializeObject<List<BoostType>>(LoadConfig("BoostTypes", Properties.Resources.BoostTypes));
+			salvage = JsonConvert.DeserializeObject<List<Salvage>>(LoadConfig("Salvage", Properties.Resources.Salvage));
 			craftingCost = JsonConvert.DeserializeObject<List<int>>(LoadConfig("CraftingCost", Properties.Resources.CraftingCost));
 			foreach (SetGroup group in setGroups) setGroupName.Items.Add(group);
 			foreach (BoostType boostType in boostTypes) boostTypeList.Items.Add(boostType);
@@ -128,7 +130,7 @@ namespace Inventor
 			Directory.CreateDirectory(config.data + "Texts/English/Powers");
 
 			File.WriteAllText(config.data + "Defs/Account/Product_Catalog.def", boostSet.GetProductCatalog());
-			File.WriteAllText(config.data + "Defs/Invention/Recipes.recipe", boostSet.GetDropRecipe(craftingCost));
+			File.WriteAllText(config.data + "Defs/Invention/Recipes.recipe", boostSet.GetDropRecipe(craftingCost, salvage));
 			File.WriteAllText(config.data + "Defs/Invention/Merits.recipe", boostSet.GetMeritsRecipe());
 			File.WriteAllText(config.data + "Defs/Invention/Store.recipe", boostSet.GetStoreRecipe());
 			File.WriteAllText(config.data + "texts/English/Bases/Recipes.ms", boostSet.DumpCache());
@@ -238,6 +240,7 @@ namespace Inventor
 			if (boost.aspects != null) foreach (BoostType type in boost.aspects) boostAspectList.Items.Add(type);
 			boostDescription.Text = boost.description;
 			boostLetter.TextChanged += boostLetter_TextChanged;
+			UpdateSalvageTree(boost);
 		}
 
 		private void UpdateAspectList()
@@ -260,14 +263,14 @@ namespace Inventor
 
 		private void boostAddAspect_Click(object sender, EventArgs e)
 		{
-			if ((boostTypeList.SelectedItem != null) && (!boostAspectList.Items.Contains(boostTypeList.SelectedItem)) && (boostAspectList.Items.Count < 4))
+			if (!String.IsNullOrEmpty(boostLetter.Text) && (boostTypeList.SelectedItem != null) && (!boostAspectList.Items.Contains(boostTypeList.SelectedItem)) && (boostAspectList.Items.Count < 4))
 			{
 				boostAspectList.Items.Add(boostTypeList.SelectedItem);
 				UpdateAspectList();
 			}
 		}
 
-		private void boostAddNew_Click(object sender, EventArgs e)
+		private void boostSave_Click(object sender, EventArgs e)
 		{
 			Boost boost = new Boost();
 			if (!string.IsNullOrEmpty(boostLetter.Text))
@@ -276,11 +279,17 @@ namespace Inventor
 
 				boost.letter = boostLetter.Text.ToUpper();
 				boost.name = boostName.Text.Trim();
-                boost.displayName = boostDisplayName.Text.Trim();
-                boost.description = boostDescription.Text.Trim();
-                boost.shortHelp = boostShortHelp.Text.Trim();
-                boost.aspects = new List<BoostType>();
+				boost.displayName = boostDisplayName.Text.Trim();
+				boost.description = boostDescription.Text.Trim();
+				boost.shortHelp = boostShortHelp.Text.Trim();
+				boost.aspects = new List<BoostType>();
 				foreach (BoostType type in boostAspectList.Items) boost.aspects.Add(type);
+
+				boost.salvage = new List<string>();
+				foreach (TreeNode level in salvageTree.Nodes)
+				{
+					foreach (TreeNode salvage in level.Nodes) boost.salvage.Add(salvage.Name);
+				}
 
 				// Rebuild the Enhancements list to keep it sorted and prevent duplicate letters.
 				foreach (Boost b in boostList.Items) if (!b.letter.Equals(boost.letter)) sortableList.Add(b);
@@ -288,6 +297,7 @@ namespace Inventor
 				sortableList = sortableList.OrderBy(b => b.letter).ToList();
 				boostList.Items.Clear();
 				foreach (Boost b in sortableList) boostList.Items.Add(b);
+				tabs.SelectTab(tabSet);
 			}
 		}
 
@@ -379,6 +389,100 @@ namespace Inventor
 		private void setIconName_TextChanged(object sender, EventArgs e)
 		{
 			if (File.Exists(config.images + setIconName.Text.Trim() + ".png")) UpdateBoostSet();
+		}
+
+		private void boostList_MouseDoubleClick(object sender, MouseEventArgs e)
+		{
+			if (boostList.SelectedItem != null)
+			{
+				Boost boost = (Boost)boostList.SelectedItem;
+				boostLetter.Text = boost.letter;
+				tabs.SelectTab(tabBoosts);
+			}
+		}
+
+		private void tabs_Selected(object sender, TabControlEventArgs e)
+		{
+			// Enhancement and Recipes tab share some controls.
+			if (tabs.SelectedIndex >= 1 && tabs.SelectedIndex <= 2)
+			{
+				boostName.Parent = tabs.TabPages[tabs.SelectedIndex];
+				boostNameLabel.Parent = tabs.TabPages[tabs.SelectedIndex];
+				boostLetter.Parent = tabs.TabPages[tabs.SelectedIndex];
+				boostLetterLabel.Parent = tabs.TabPages[tabs.SelectedIndex];
+				boostSave.Parent = tabs.TabPages[tabs.SelectedIndex];
+			}
+		}
+
+		private void UpdateSalvageList(TreeNode node)
+		{
+			if (node.Parent == null)
+			{
+				salvageList.Items.Clear();
+				foreach (Salvage s in salvage)
+				{
+					if (node.Index == (int) s.level && !node.Nodes.ContainsKey(s.name)) salvageList.Items.Add(s);
+				}
+			}
+			else
+			{
+				UpdateSalvageList(node.Parent);
+			}
+		}
+
+		private void AddSalvageToTree(Salvage s, TreeNode node)
+		{
+			TreeNode n = new TreeNode(s.displayName);
+			n.Name = s.name;
+			if (s.rarity > Salvage.Rarity.Common) n.BackColor = (s.rarity == Salvage.Rarity.Uncommon) ? Color.Yellow : Color.Orange;
+			node.Nodes.Add(n);
+			UpdateSalvageList(node);
+			node.Expand();
+		}
+
+		private void UpdateSalvageTree(Boost boost)
+		{
+			List<TreeNode> lvlNodes = new List<TreeNode>();
+			lvlNodes.Add(new TreeNode("Low Level (10-25)"));
+			lvlNodes.Add(new TreeNode("Mid Level (26-40)"));
+			lvlNodes.Add(new TreeNode("High Level (41-50)"));
+
+			if (boost.salvage != null)
+			{
+				foreach (string sid in boost.salvage)
+				{
+					Salvage s = salvage.Find(x => x.name.Equals(sid));
+					AddSalvageToTree(s, lvlNodes[(int)s.level]);
+				}
+			}
+
+			salvageTree.Nodes.Clear();
+			foreach (TreeNode node in lvlNodes) salvageTree.Nodes.Add(node);
+			salvageList.Items.Clear();
+		}
+
+		private void salvageTree_KeyDown(object sender, KeyEventArgs e)
+		{
+			TreeView tree = (TreeView)sender;
+			if (e.KeyCode == Keys.Delete && tree.SelectedNode.Parent != null)
+			{
+				tree.SelectedNode.Remove();
+				UpdateSalvageList(tree.SelectedNode);
+			}
+		}
+
+		private void salvageTree_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
+		{
+			UpdateSalvageList(e.Node);
+		}
+
+		private void salvageAdd_Click(object sender, EventArgs e)
+		{
+			if (!String.IsNullOrEmpty(boostLetter.Text) &&  salvageList.SelectedItem != null)
+			{
+				Salvage s = (Salvage)salvageList.SelectedItem;
+				AddSalvageToTree(s, salvageTree.Nodes[(int)s.level]);
+			}
 		}
 	}
 }

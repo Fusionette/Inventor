@@ -1,0 +1,758 @@
+[
+  {
+    "name": "S_AlchemicalSilver",
+    "displayName": "Alchemical Silver",
+    "origin": 0,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_AncientArtifact",
+    "displayName": "Ancient Artifact",
+    "origin": 0,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_AncientBone",
+    "displayName": "Ancient Bone",
+    "origin": 0,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_Boresight",
+    "displayName": "Boresight",
+    "origin": 1,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_Brass",
+    "displayName": "Brass",
+    "origin": 1,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_CeramicArmorPlate",
+    "displayName": "Ceramic Armor Plate",
+    "origin": 1,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_CircuitBoard",
+    "displayName": "Circuit Board",
+    "origin": 1,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_ClockworkWinder",
+    "displayName": "Clockwork Winder",
+    "origin": 0,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_ComputerVirus",
+    "displayName": "Computer Virus",
+    "origin": 1,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_DemonicBloodSample",
+    "displayName": "Demonic Blood Sample",
+    "origin": 0,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_DemonicThreatReport",
+    "displayName": "Demonic Threat Report",
+    "origin": 0,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_Fortune",
+    "displayName": "Fortune",
+    "origin": 0,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_HumanBloodSample",
+    "displayName": "Human Blood Sample",
+    "origin": 1,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_HydraulicPiston",
+    "displayName": "Hydraulic Piston",
+    "origin": 1,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_ImprovisedCybernetic",
+    "displayName": "Improvised Cybernetic",
+    "origin": 1,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_InanimateCarbonRod",
+    "displayName": "Inanimate Carbon Rod",
+    "origin": 1,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_InertGas",
+    "displayName": "Inert Gas",
+    "origin": 1,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_Iron",
+    "displayName": "Iron",
+    "origin": 1,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_KineticWeapon",
+    "displayName": "Kinetic Weapon",
+    "origin": 1,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_LuckCharm",
+    "displayName": "Luck Charm",
+    "origin": 0,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_MasterworkWeapon",
+    "displayName": "Masterwork Weapon",
+    "origin": 0,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_MathematicProof",
+    "displayName": "Mathematic Proof",
+    "origin": 1,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_NevermeltingIce",
+    "displayName": "Nevermelting Ice",
+    "origin": 0,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_RegeneratingFlesh",
+    "displayName": "Regenerating Flesh",
+    "origin": 0,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_Ruby",
+    "displayName": "Ruby",
+    "origin": 0,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_Rune",
+    "displayName": "Rune",
+    "origin": 0,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_RuneboundArmor",
+    "displayName": "Runebound Armor",
+    "origin": 0,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_ScientificTheory",
+    "displayName": "Scientific Theory",
+    "origin": 1,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_Silver",
+    "displayName": "Silver",
+    "origin": 1,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_SimpleChemical",
+    "displayName": "Simple Chemical",
+    "origin": 1,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_SpellInk",
+    "displayName": "Spell Ink",
+    "origin": 0,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_SpellScroll",
+    "displayName": "Spell Scroll",
+    "origin": 0,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_SpiritThorn",
+    "displayName": "Spirit Thorn",
+    "origin": 0,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_SpiritualEssence",
+    "displayName": "Spiritual Essence",
+    "origin": 0,
+    "rarity": 0,
+    "level": 0
+  },
+  {
+    "name": "S_StabilizedMutantGenome",
+    "displayName": "Stabilized Mutant Genome",
+    "origin": 1,
+    "rarity": 0,
+    "level": 1
+  },
+  {
+    "name": "S_TemporalAnalyzer",
+    "displayName": "Temporal Analyzer",
+    "origin": 1,
+    "rarity": 0,
+    "level": 2
+  },
+  {
+    "name": "S_AlchemicalGold",
+    "displayName": "Alchemical Gold",
+    "origin": 0,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_BleedingStone",
+    "displayName": "Bleeding Stone",
+    "origin": 0,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_BloodoftheIncarnate",
+    "displayName": "Blood of the Incarnate",
+    "origin": 0,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_CarnivalofShadowsMask",
+    "displayName": "Carnival of Shadows Mask",
+    "origin": 0,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_ChaosTheorem",
+    "displayName": "Chaos Theorem",
+    "origin": 1,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_ChemicalFormula",
+    "displayName": "Chemical Formula",
+    "origin": 1,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_ClockworkGear",
+    "displayName": "Clockwork Gear",
+    "origin": 0,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_CommercialCybernetic",
+    "displayName": "Commercial Cybernetic",
+    "origin": 1,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_CorrosiveGas",
+    "displayName": "Corrosive Gas",
+    "origin": 1,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_DaemonProgram",
+    "displayName": "Daemon Program",
+    "origin": 1,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_DataDrive",
+    "displayName": "Data Drive",
+    "origin": 1,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_Destiny",
+    "displayName": "Destiny",
+    "origin": 0,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_EnergyWeapon",
+    "displayName": "Energy Weapon",
+    "origin": 1,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_EnscorcelledWeapon",
+    "displayName": "Enscorcelled Weapon",
+    "origin": 0,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_Gold",
+    "displayName": "Gold",
+    "origin": 1,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_HeavyWater",
+    "displayName": "Heavy Water",
+    "origin": 1,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_LivingTattoo",
+    "displayName": "Living Tattoo",
+    "origin": 0,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_MutantBloodSample",
+    "displayName": "Mutant Blood Sample",
+    "origin": 1,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_MutantDNAStrand",
+    "displayName": "Mutant DNA Strand",
+    "origin": 1,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_PneumaticPiston",
+    "displayName": "Pneumatic Piston",
+    "origin": 1,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_Polycarbon",
+    "displayName": "Polycarbon",
+    "origin": 1,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_PsionicEctoplasm",
+    "displayName": "Psionic Ectoplasm",
+    "origin": 0,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_PsionicThreatReport",
+    "displayName": "Psionic Threat Report",
+    "origin": 0,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_Sapphire",
+    "displayName": "Sapphire",
+    "origin": 0,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_ScientificLaw",
+    "displayName": "Scientific Law",
+    "origin": 1,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_Scope",
+    "displayName": "Scope",
+    "origin": 1,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_SoulboundArmor",
+    "displayName": "Soulbound Armor",
+    "origin": 0,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_Steel",
+    "displayName": "Steel",
+    "origin": 1,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_Symbol",
+    "displayName": "Symbol",
+    "origin": 0,
+    "rarity": 1,
+    "level": 1
+  },
+  {
+    "name": "S_TemporalSands",
+    "displayName": "Temporal Sands",
+    "origin": 0,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_TemporalTracer",
+    "displayName": "Temporal Tracer",
+    "origin": 1,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_ThornTreeVine",
+    "displayName": "Thorn Tree Vine",
+    "origin": 0,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_TitaniumShard",
+    "displayName": "Titanium Shard",
+    "origin": 1,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_UnearthedRelic",
+    "displayName": "Unearthed Relic",
+    "origin": 0,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_UnquenchableFlame",
+    "displayName": "Unquenchable Flame",
+    "origin": 0,
+    "rarity": 1,
+    "level": 2
+  },
+  {
+    "name": "S_VolumeoftheObsidianLibrum",
+    "displayName": "Volume of the Obsidian Librum",
+    "origin": 0,
+    "rarity": 1,
+    "level": 0
+  },
+  {
+    "name": "S_AlienBloodSample",
+    "displayName": "Alien Blood Sample",
+    "origin": 1,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_BlackBloodoftheEarth",
+    "displayName": "Black Blood of the Earth",
+    "origin": 0,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_ChronalSkip",
+    "displayName": "Chronal Skip",
+    "origin": 1,
+    "rarity": 2,
+    "level": 2
+  },
+  {
+    "name": "S_ComplexChemicalFormula",
+    "displayName": "Complex Chemical Formula",
+    "origin": 1,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_ConspiratorialEvidence",
+    "displayName": "Conspiratorial Evidence",
+    "origin": 1,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_DeificWeapon",
+    "displayName": "Deific Weapon",
+    "origin": 0,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_Diamond",
+    "displayName": "Diamond",
+    "origin": 0,
+    "rarity": 2,
+    "level": 2
+  },
+  {
+    "name": "S_EmpoweredSigil",
+    "displayName": "Empowered Sigil",
+    "origin": 0,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_EnchantedImpervium",
+    "displayName": "Enchanted Impervium",
+    "origin": 0,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_EnrichedPlutonium",
+    "displayName": "Enriched Plutonium",
+    "origin": 1,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_EssenceoftheFuries",
+    "displayName": "Essence of the Furies",
+    "origin": 0,
+    "rarity": 2,
+    "level": 2
+  },
+  {
+    "name": "S_HamidonGoo",
+    "displayName": "Hamidon Goo",
+    "origin": 0,
+    "rarity": 2,
+    "level": 2
+  },
+  {
+    "name": "S_HeadsUpDisplay",
+    "displayName": "Heads Up Display",
+    "origin": 1,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_HolographicMemory",
+    "displayName": "Holographic Memory",
+    "origin": 1,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_Impervium",
+    "displayName": "Impervium",
+    "origin": 1,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_LamentBox",
+    "displayName": "Lament Box",
+    "origin": 0,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_MagicalConspiracy",
+    "displayName": "Magical Conspiracy",
+    "origin": 0,
+    "rarity": 2,
+    "level": 2
+  },
+  {
+    "name": "S_MilitaryCybernetic",
+    "displayName": "Military Cybernetic",
+    "origin": 1,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_MuVestment",
+    "displayName": "Mu Vestment",
+    "origin": 0,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_MutatingGenome",
+    "displayName": "Mutating Genome",
+    "origin": 1,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_PagefromtheMalleusMundi",
+    "displayName": "Page from the Malleus Mundi",
+    "origin": 0,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_PangeanSoil",
+    "displayName": "Pangean Soil",
+    "origin": 0,
+    "rarity": 2,
+    "level": 2
+  },
+  {
+    "name": "S_PhotonicWeapon",
+    "displayName": "Photonic Weapon",
+    "origin": 1,
+    "rarity": 2,
+    "level": 2
+  },
+  {
+    "name": "S_PlasmaCapacitor",
+    "displayName": "Plasma Capacitor",
+    "origin": 1,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_Platinum",
+    "displayName": "Platinum",
+    "origin": 1,
+    "rarity": 2,
+    "level": 2
+  },
+  {
+    "name": "S_PositronicMatrix",
+    "displayName": "Positronic Matrix",
+    "origin": 1,
+    "rarity": 2,
+    "level": 2
+  },
+  {
+    "name": "S_Prophecy",
+    "displayName": "Prophecy",
+    "origin": 0,
+    "rarity": 2,
+    "level": 2
+  },
+  {
+    "name": "S_PsionicManfestation",
+    "displayName": "Psionic Manfestation",
+    "origin": 0,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_PsioniclyChargedBrass",
+    "displayName": "Psionicly Charged Brass",
+    "origin": 0,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_ReactiveGas",
+    "displayName": "Reactive Gas",
+    "origin": 1,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_RiktiAlloy",
+    "displayName": "Rikti Alloy",
+    "origin": 1,
+    "rarity": 2,
+    "level": 2
+  },
+  {
+    "name": "S_SoulTrappedGem",
+    "displayName": "Soul Trapped Gem",
+    "origin": 0,
+    "rarity": 2,
+    "level": 1
+  },
+  {
+    "name": "S_SourceCode",
+    "displayName": "Source Code",
+    "origin": 1,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_StrandofFate",
+    "displayName": "Strand of Fate",
+    "origin": 0,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_SymbioticArmor",
+    "displayName": "Symbiotic Armor",
+    "origin": 0,
+    "rarity": 2,
+    "level": 0
+  },
+  {
+    "name": "S_SyntheticIntelligenceUnit",
+    "displayName": "Synthetic Intelligence Unit",
+    "origin": 1,
+    "rarity": 2,
+    "level": 2
+  }
+]

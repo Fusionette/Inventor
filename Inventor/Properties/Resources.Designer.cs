@@ -19,7 +19,7 @@ namespace Inventor.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -75,6 +75,7 @@ namespace Inventor.Properties {
         ///  {
         ///    &quot;displayName&quot;: &quot;Accuracy&quot;,
         ///    &quot;description&quot;: &quot;Enhances accuracy by {Boost.Attrib.Accuracy.Scale}%.&quot;,
+        ///    &quot;shortHelp&quot;: &quot;+ACC&quot;,
         ///    &quot;attribMods&quot;: [
         ///      [
         ///        {
@@ -92,10 +93,7 @@ namespace Inventor.Properties {
         ///          &quot;scale&quot;: &quot;0.6250&quot;
         ///        }
         ///      ],
-        ///      [
-        ///        {
-        ///          &quot;name&quot;: &quot;Accuracy&quot;,
-        /// [rest of string was truncated]&quot;;.
+        ///  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string BoostTypes {
             get {
@@ -104,7 +102,12 @@ namespace Inventor.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;AutoSave&quot;:true}
+        ///   Looks up a localized string similar to {
+        ///  &quot;autoSave&quot;: true,
+        ///  &quot;images&quot;: &quot;images/&quot;,
+        ///  &quot;thumbs&quot;: &quot;thumbs/&quot;,
+        ///  &quot;data&quot;: &quot;data/&quot;
+        ///}
         ///.
         /// </summary>
         internal static string Config {
@@ -401,6 +404,41 @@ namespace Inventor.Properties {
             get {
                 object obj = ResourceManager.GetObject("Recipe", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [
+        ///  {
+        ///    &quot;name&quot;: &quot;S_AlchemicalGold&quot;,
+        ///    &quot;displayName&quot;: &quot;Alchemical Gold&quot;,
+        ///    &quot;type&quot;: 0,
+        ///    &quot;rarity&quot;: 1,
+        ///    &quot;level&quot;: 1
+        ///  },
+        ///  {
+        ///    &quot;name&quot;: &quot;S_AlchemicalSilver&quot;,
+        ///    &quot;displayName&quot;: &quot;Alchemical Silver&quot;,
+        ///    &quot;type&quot;: 0,
+        ///    &quot;rarity&quot;: 0,
+        ///    &quot;level&quot;: 1
+        ///  },
+        ///  {
+        ///    &quot;name&quot;: &quot;S_AlienBloodSample&quot;,
+        ///    &quot;displayName&quot;: &quot;Alien Blood Sample&quot;,
+        ///    &quot;type&quot;: 1,
+        ///    &quot;rarity&quot;: 2,
+        ///    &quot;level&quot;: 0
+        ///  },
+        ///  {
+        ///    &quot;name&quot;: &quot;S_AncientArtifact&quot;,
+        ///    &quot;displayName&quot;: &quot;Ancient Artifact&quot;,
+        ///    &quot;type&quot;: 0,
+        ///    &quot;r [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Salvage {
+            get {
+                return ResourceManager.GetString("Salvage", resourceCulture);
             }
         }
         

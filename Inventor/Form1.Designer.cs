@@ -28,8 +28,8 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.tabControl1 = new System.Windows.Forms.TabControl();
-			this.tabPage1 = new System.Windows.Forms.TabPage();
+			this.tabs = new System.Windows.Forms.TabControl();
+			this.tabSet = new System.Windows.Forms.TabPage();
 			this.saveJson = new System.Windows.Forms.Button();
 			this.loadJson = new System.Windows.Forms.Button();
 			this.setBoostsAllowed = new System.Windows.Forms.TextBox();
@@ -55,24 +55,33 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
 			this.setDisplayName = new System.Windows.Forms.TextBox();
-			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.tabBoosts = new System.Windows.Forms.TabPage();
 			this.boostShortHelp = new System.Windows.Forms.TextBox();
 			this.label25 = new System.Windows.Forms.Label();
 			this.boostDescription = new System.Windows.Forms.TextBox();
 			this.label19 = new System.Windows.Forms.Label();
-			this.boostAddNew = new System.Windows.Forms.Button();
+			this.boostSave = new System.Windows.Forms.Button();
 			this.label14 = new System.Windows.Forms.Label();
 			this.boostAspectList = new System.Windows.Forms.ListBox();
 			this.boostAddAspect = new System.Windows.Forms.Button();
 			this.boostTypeList = new System.Windows.Forms.ComboBox();
 			this.label18 = new System.Windows.Forms.Label();
 			this.boostName = new System.Windows.Forms.TextBox();
-			this.label17 = new System.Windows.Forms.Label();
+			this.boostNameLabel = new System.Windows.Forms.Label();
 			this.boostDisplayName = new System.Windows.Forms.TextBox();
 			this.label16 = new System.Windows.Forms.Label();
 			this.boostLetter = new System.Windows.Forms.TextBox();
+			this.boostLetterLabel = new System.Windows.Forms.Label();
+			this.tabRecipes = new System.Windows.Forms.TabPage();
 			this.label15 = new System.Windows.Forms.Label();
-			this.tabPage3 = new System.Windows.Forms.TabPage();
+			this.salvageTree = new System.Windows.Forms.TreeView();
+			this.label24 = new System.Windows.Forms.Label();
+			this.recipeRarity = new System.Windows.Forms.ComboBox();
+			this.recipeSku = new System.Windows.Forms.TextBox();
+			this.label23 = new System.Windows.Forms.Label();
+			this.label22 = new System.Windows.Forms.Label();
+			this.recipeTabName = new System.Windows.Forms.TextBox();
+			this.tabBonus = new System.Windows.Forms.TabPage();
 			this.bonusAddNew = new System.Windows.Forms.Button();
 			this.label13 = new System.Windows.Forms.Label();
 			this.bonusRequires = new System.Windows.Forms.TextBox();
@@ -82,71 +91,68 @@
 			this.label11 = new System.Windows.Forms.Label();
 			this.bonusMinBoosts = new System.Windows.Forms.NumericUpDown();
 			this.label10 = new System.Windows.Forms.Label();
-			this.tabPage4 = new System.Windows.Forms.TabPage();
-			this.label24 = new System.Windows.Forms.Label();
-			this.recipeRarity = new System.Windows.Forms.ComboBox();
-			this.recipeSku = new System.Windows.Forms.TextBox();
-			this.label23 = new System.Windows.Forms.Label();
-			this.label22 = new System.Windows.Forms.Label();
-			this.recipeTabName = new System.Windows.Forms.TextBox();
-			this.tabControl1.SuspendLayout();
-			this.tabPage1.SuspendLayout();
+			this.salvageAdd = new System.Windows.Forms.Button();
+			this.salvageList = new System.Windows.Forms.ComboBox();
+			this.label17 = new System.Windows.Forms.Label();
+			this.tabs.SuspendLayout();
+			this.tabSet.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.slotMinLevel)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.setMaxLevel)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.setMinLevel)).BeginInit();
-			this.tabPage2.SuspendLayout();
-			this.tabPage3.SuspendLayout();
+			this.tabBoosts.SuspendLayout();
+			this.tabRecipes.SuspendLayout();
+			this.tabBonus.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.bonusMaxBoosts)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.bonusMinBoosts)).BeginInit();
-			this.tabPage4.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// tabControl1
+			// tabs
 			// 
-			this.tabControl1.Controls.Add(this.tabPage1);
-			this.tabControl1.Controls.Add(this.tabPage2);
-			this.tabControl1.Controls.Add(this.tabPage3);
-			this.tabControl1.Controls.Add(this.tabPage4);
-			this.tabControl1.Location = new System.Drawing.Point(12, 12);
-			this.tabControl1.Name = "tabControl1";
-			this.tabControl1.SelectedIndex = 0;
-			this.tabControl1.Size = new System.Drawing.Size(462, 452);
-			this.tabControl1.TabIndex = 104;
+			this.tabs.Controls.Add(this.tabSet);
+			this.tabs.Controls.Add(this.tabBoosts);
+			this.tabs.Controls.Add(this.tabRecipes);
+			this.tabs.Controls.Add(this.tabBonus);
+			this.tabs.Location = new System.Drawing.Point(12, 12);
+			this.tabs.Name = "tabs";
+			this.tabs.SelectedIndex = 0;
+			this.tabs.Size = new System.Drawing.Size(462, 452);
+			this.tabs.TabIndex = 104;
+			this.tabs.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabs_Selected);
 			// 
-			// tabPage1
+			// tabSet
 			// 
-			this.tabPage1.Controls.Add(this.saveJson);
-			this.tabPage1.Controls.Add(this.loadJson);
-			this.tabPage1.Controls.Add(this.setBoostsAllowed);
-			this.tabPage1.Controls.Add(this.label21);
-			this.tabPage1.Controls.Add(this.setIconName);
-			this.tabPage1.Controls.Add(this.label20);
-			this.tabPage1.Controls.Add(this.bonusList);
-			this.tabPage1.Controls.Add(this.label9);
-			this.tabPage1.Controls.Add(this.boostList);
-			this.tabPage1.Controls.Add(this.label8);
-			this.tabPage1.Controls.Add(this.createDataFiles);
-			this.tabPage1.Controls.Add(this.label7);
-			this.tabPage1.Controls.Add(this.slotMinLevel);
-			this.tabPage1.Controls.Add(this.label6);
-			this.tabPage1.Controls.Add(this.label5);
-			this.tabPage1.Controls.Add(this.setMaxLevel);
-			this.tabPage1.Controls.Add(this.setMinLevel);
-			this.tabPage1.Controls.Add(this.conversionGroups);
-			this.tabPage1.Controls.Add(this.label4);
-			this.tabPage1.Controls.Add(this.setGroupName);
-			this.tabPage1.Controls.Add(this.label3);
-			this.tabPage1.Controls.Add(this.setName);
-			this.tabPage1.Controls.Add(this.label2);
-			this.tabPage1.Controls.Add(this.label1);
-			this.tabPage1.Controls.Add(this.setDisplayName);
-			this.tabPage1.Location = new System.Drawing.Point(4, 22);
-			this.tabPage1.Name = "tabPage1";
-			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage1.Size = new System.Drawing.Size(454, 426);
-			this.tabPage1.TabIndex = 0;
-			this.tabPage1.Text = "Set Overview";
-			this.tabPage1.UseVisualStyleBackColor = true;
+			this.tabSet.Controls.Add(this.saveJson);
+			this.tabSet.Controls.Add(this.loadJson);
+			this.tabSet.Controls.Add(this.setBoostsAllowed);
+			this.tabSet.Controls.Add(this.label21);
+			this.tabSet.Controls.Add(this.setIconName);
+			this.tabSet.Controls.Add(this.label20);
+			this.tabSet.Controls.Add(this.bonusList);
+			this.tabSet.Controls.Add(this.label9);
+			this.tabSet.Controls.Add(this.boostList);
+			this.tabSet.Controls.Add(this.label8);
+			this.tabSet.Controls.Add(this.createDataFiles);
+			this.tabSet.Controls.Add(this.label7);
+			this.tabSet.Controls.Add(this.slotMinLevel);
+			this.tabSet.Controls.Add(this.label6);
+			this.tabSet.Controls.Add(this.label5);
+			this.tabSet.Controls.Add(this.setMaxLevel);
+			this.tabSet.Controls.Add(this.setMinLevel);
+			this.tabSet.Controls.Add(this.conversionGroups);
+			this.tabSet.Controls.Add(this.label4);
+			this.tabSet.Controls.Add(this.setGroupName);
+			this.tabSet.Controls.Add(this.label3);
+			this.tabSet.Controls.Add(this.setName);
+			this.tabSet.Controls.Add(this.label2);
+			this.tabSet.Controls.Add(this.label1);
+			this.tabSet.Controls.Add(this.setDisplayName);
+			this.tabSet.Location = new System.Drawing.Point(4, 22);
+			this.tabSet.Name = "tabSet";
+			this.tabSet.Padding = new System.Windows.Forms.Padding(3);
+			this.tabSet.Size = new System.Drawing.Size(454, 426);
+			this.tabSet.TabIndex = 0;
+			this.tabSet.Text = "Set Overview";
+			this.tabSet.UseVisualStyleBackColor = true;
 			// 
 			// saveJson
 			// 
@@ -229,6 +235,7 @@
 			this.boostList.Size = new System.Drawing.Size(320, 95);
 			this.boostList.TabIndex = 10;
 			this.boostList.KeyDown += new System.Windows.Forms.KeyEventHandler(this.boostList_KeyDown);
+			this.boostList.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.boostList_MouseDoubleClick);
 			// 
 			// label8
 			// 
@@ -415,35 +422,35 @@
 			this.setDisplayName.TabIndex = 1;
 			this.setDisplayName.TextChanged += new System.EventHandler(this.setDisplayName_TextChanged);
 			// 
-			// tabPage2
+			// tabBoosts
 			// 
-			this.tabPage2.Controls.Add(this.boostShortHelp);
-			this.tabPage2.Controls.Add(this.label25);
-			this.tabPage2.Controls.Add(this.boostDescription);
-			this.tabPage2.Controls.Add(this.label19);
-			this.tabPage2.Controls.Add(this.boostAddNew);
-			this.tabPage2.Controls.Add(this.label14);
-			this.tabPage2.Controls.Add(this.boostAspectList);
-			this.tabPage2.Controls.Add(this.boostAddAspect);
-			this.tabPage2.Controls.Add(this.boostTypeList);
-			this.tabPage2.Controls.Add(this.label18);
-			this.tabPage2.Controls.Add(this.boostName);
-			this.tabPage2.Controls.Add(this.label17);
-			this.tabPage2.Controls.Add(this.boostDisplayName);
-			this.tabPage2.Controls.Add(this.label16);
-			this.tabPage2.Controls.Add(this.boostLetter);
-			this.tabPage2.Controls.Add(this.label15);
-			this.tabPage2.Location = new System.Drawing.Point(4, 22);
-			this.tabPage2.Name = "tabPage2";
-			this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-			this.tabPage2.Size = new System.Drawing.Size(454, 426);
-			this.tabPage2.TabIndex = 1;
-			this.tabPage2.Text = "Enhancement";
-			this.tabPage2.UseVisualStyleBackColor = true;
+			this.tabBoosts.Controls.Add(this.boostShortHelp);
+			this.tabBoosts.Controls.Add(this.label25);
+			this.tabBoosts.Controls.Add(this.boostDescription);
+			this.tabBoosts.Controls.Add(this.label19);
+			this.tabBoosts.Controls.Add(this.boostSave);
+			this.tabBoosts.Controls.Add(this.label14);
+			this.tabBoosts.Controls.Add(this.boostAspectList);
+			this.tabBoosts.Controls.Add(this.boostAddAspect);
+			this.tabBoosts.Controls.Add(this.boostTypeList);
+			this.tabBoosts.Controls.Add(this.label18);
+			this.tabBoosts.Controls.Add(this.boostName);
+			this.tabBoosts.Controls.Add(this.boostNameLabel);
+			this.tabBoosts.Controls.Add(this.boostDisplayName);
+			this.tabBoosts.Controls.Add(this.label16);
+			this.tabBoosts.Controls.Add(this.boostLetter);
+			this.tabBoosts.Controls.Add(this.boostLetterLabel);
+			this.tabBoosts.Location = new System.Drawing.Point(4, 22);
+			this.tabBoosts.Name = "tabBoosts";
+			this.tabBoosts.Padding = new System.Windows.Forms.Padding(3);
+			this.tabBoosts.Size = new System.Drawing.Size(454, 426);
+			this.tabBoosts.TabIndex = 1;
+			this.tabBoosts.Text = "Enhancement";
+			this.tabBoosts.UseVisualStyleBackColor = true;
 			// 
 			// boostShortHelp
 			// 
-			this.boostShortHelp.Location = new System.Drawing.Point(120, 116);
+			this.boostShortHelp.Location = new System.Drawing.Point(120, 115);
 			this.boostShortHelp.Name = "boostShortHelp";
 			this.boostShortHelp.Size = new System.Drawing.Size(320, 20);
 			this.boostShortHelp.TabIndex = 6;
@@ -451,7 +458,7 @@
 			// label25
 			// 
 			this.label25.AutoSize = true;
-			this.label25.Location = new System.Drawing.Point(54, 119);
+			this.label25.Location = new System.Drawing.Point(54, 118);
 			this.label25.Name = "label25";
 			this.label25.Size = new System.Drawing.Size(60, 13);
 			this.label25.TabIndex = 118;
@@ -459,7 +466,7 @@
 			// 
 			// boostDescription
 			// 
-			this.boostDescription.Location = new System.Drawing.Point(120, 142);
+			this.boostDescription.Location = new System.Drawing.Point(120, 141);
 			this.boostDescription.Multiline = true;
 			this.boostDescription.Name = "boostDescription";
 			this.boostDescription.Size = new System.Drawing.Size(320, 96);
@@ -468,26 +475,26 @@
 			// label19
 			// 
 			this.label19.AutoSize = true;
-			this.label19.Location = new System.Drawing.Point(51, 145);
+			this.label19.Location = new System.Drawing.Point(51, 144);
 			this.label19.Name = "label19";
 			this.label19.Size = new System.Drawing.Size(63, 13);
 			this.label19.TabIndex = 116;
 			this.label19.Text = "Description:";
 			// 
-			// boostAddNew
+			// boostSave
 			// 
-			this.boostAddNew.Location = new System.Drawing.Point(120, 345);
-			this.boostAddNew.Name = "boostAddNew";
-			this.boostAddNew.Size = new System.Drawing.Size(320, 23);
-			this.boostAddNew.TabIndex = 9;
-			this.boostAddNew.Text = "Add or Edit Enhancement";
-			this.boostAddNew.UseVisualStyleBackColor = true;
-			this.boostAddNew.Click += new System.EventHandler(this.boostAddNew_Click);
+			this.boostSave.Location = new System.Drawing.Point(120, 344);
+			this.boostSave.Name = "boostSave";
+			this.boostSave.Size = new System.Drawing.Size(320, 23);
+			this.boostSave.TabIndex = 9;
+			this.boostSave.Text = "Add or Edit Enhancement";
+			this.boostSave.UseVisualStyleBackColor = true;
+			this.boostSave.Click += new System.EventHandler(this.boostSave_Click);
 			// 
 			// label14
 			// 
 			this.label14.AutoSize = true;
-			this.label14.Location = new System.Drawing.Point(66, 246);
+			this.label14.Location = new System.Drawing.Point(66, 245);
 			this.label14.Name = "label14";
 			this.label14.Size = new System.Drawing.Size(48, 13);
 			this.label14.TabIndex = 114;
@@ -497,7 +504,7 @@
 			// 
 			this.boostAspectList.DisplayMember = "displayName";
 			this.boostAspectList.FormattingEnabled = true;
-			this.boostAspectList.Location = new System.Drawing.Point(120, 244);
+			this.boostAspectList.Location = new System.Drawing.Point(120, 243);
 			this.boostAspectList.Name = "boostAspectList";
 			this.boostAspectList.Size = new System.Drawing.Size(320, 95);
 			this.boostAspectList.TabIndex = 8;
@@ -505,7 +512,7 @@
 			// 
 			// boostAddAspect
 			// 
-			this.boostAddAspect.Location = new System.Drawing.Point(390, 61);
+			this.boostAddAspect.Location = new System.Drawing.Point(390, 60);
 			this.boostAddAspect.Name = "boostAddAspect";
 			this.boostAddAspect.Size = new System.Drawing.Size(50, 23);
 			this.boostAddAspect.TabIndex = 4;
@@ -518,7 +525,7 @@
 			this.boostTypeList.DisplayMember = "displayName";
 			this.boostTypeList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.boostTypeList.FormattingEnabled = true;
-			this.boostTypeList.Location = new System.Drawing.Point(120, 62);
+			this.boostTypeList.Location = new System.Drawing.Point(120, 61);
 			this.boostTypeList.Name = "boostTypeList";
 			this.boostTypeList.Size = new System.Drawing.Size(264, 21);
 			this.boostTypeList.TabIndex = 3;
@@ -526,7 +533,7 @@
 			// label18
 			// 
 			this.label18.AutoSize = true;
-			this.label18.Location = new System.Drawing.Point(38, 66);
+			this.label18.Location = new System.Drawing.Point(38, 65);
 			this.label18.Name = "label18";
 			this.label18.Size = new System.Drawing.Size(76, 13);
 			this.label18.TabIndex = 113;
@@ -534,23 +541,24 @@
 			// 
 			// boostName
 			// 
-			this.boostName.Location = new System.Drawing.Point(120, 36);
+			this.boostName.Location = new System.Drawing.Point(120, 35);
 			this.boostName.Name = "boostName";
+			this.boostName.ReadOnly = true;
 			this.boostName.Size = new System.Drawing.Size(320, 20);
 			this.boostName.TabIndex = 2;
 			// 
-			// label17
+			// boostNameLabel
 			// 
-			this.label17.AutoSize = true;
-			this.label17.Location = new System.Drawing.Point(38, 39);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(76, 13);
-			this.label17.TabIndex = 111;
-			this.label17.Text = "Internal Name:";
+			this.boostNameLabel.AutoSize = true;
+			this.boostNameLabel.Location = new System.Drawing.Point(38, 38);
+			this.boostNameLabel.Name = "boostNameLabel";
+			this.boostNameLabel.Size = new System.Drawing.Size(76, 13);
+			this.boostNameLabel.TabIndex = 111;
+			this.boostNameLabel.Text = "Internal Name:";
 			// 
 			// boostDisplayName
 			// 
-			this.boostDisplayName.Location = new System.Drawing.Point(120, 90);
+			this.boostDisplayName.Location = new System.Drawing.Point(120, 89);
 			this.boostDisplayName.Name = "boostDisplayName";
 			this.boostDisplayName.Size = new System.Drawing.Size(320, 20);
 			this.boostDisplayName.TabIndex = 5;
@@ -558,7 +566,7 @@
 			// label16
 			// 
 			this.label16.AutoSize = true;
-			this.label16.Location = new System.Drawing.Point(7, 93);
+			this.label16.Location = new System.Drawing.Point(7, 92);
 			this.label16.Name = "label16";
 			this.label16.Size = new System.Drawing.Size(107, 13);
 			this.label16.TabIndex = 109;
@@ -566,46 +574,139 @@
 			// 
 			// boostLetter
 			// 
-			this.boostLetter.Location = new System.Drawing.Point(120, 10);
+			this.boostLetter.Location = new System.Drawing.Point(120, 9);
 			this.boostLetter.MaxLength = 1;
 			this.boostLetter.Name = "boostLetter";
 			this.boostLetter.Size = new System.Drawing.Size(50, 20);
 			this.boostLetter.TabIndex = 1;
 			this.boostLetter.TextChanged += new System.EventHandler(this.boostLetter_TextChanged);
 			// 
+			// boostLetterLabel
+			// 
+			this.boostLetterLabel.AutoSize = true;
+			this.boostLetterLabel.Location = new System.Drawing.Point(19, 12);
+			this.boostLetterLabel.Name = "boostLetterLabel";
+			this.boostLetterLabel.Size = new System.Drawing.Size(95, 13);
+			this.boostLetterLabel.TabIndex = 2;
+			this.boostLetterLabel.Text = "Enhancement A-F:";
+			// 
+			// tabRecipes
+			// 
+			this.tabRecipes.Controls.Add(this.salvageAdd);
+			this.tabRecipes.Controls.Add(this.salvageList);
+			this.tabRecipes.Controls.Add(this.label17);
+			this.tabRecipes.Controls.Add(this.label15);
+			this.tabRecipes.Controls.Add(this.salvageTree);
+			this.tabRecipes.Controls.Add(this.label24);
+			this.tabRecipes.Controls.Add(this.recipeRarity);
+			this.tabRecipes.Controls.Add(this.recipeSku);
+			this.tabRecipes.Controls.Add(this.label23);
+			this.tabRecipes.Controls.Add(this.label22);
+			this.tabRecipes.Controls.Add(this.recipeTabName);
+			this.tabRecipes.Location = new System.Drawing.Point(4, 22);
+			this.tabRecipes.Name = "tabRecipes";
+			this.tabRecipes.Size = new System.Drawing.Size(454, 426);
+			this.tabRecipes.TabIndex = 3;
+			this.tabRecipes.Text = "Recipes";
+			this.tabRecipes.UseVisualStyleBackColor = true;
+			// 
 			// label15
 			// 
 			this.label15.AutoSize = true;
-			this.label15.Location = new System.Drawing.Point(19, 13);
+			this.label15.Location = new System.Drawing.Point(65, 92);
 			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(95, 13);
-			this.label15.TabIndex = 2;
-			this.label15.Text = "Enhancement A-F:";
+			this.label15.Size = new System.Drawing.Size(49, 13);
+			this.label15.TabIndex = 125;
+			this.label15.Text = "Salvage:";
 			// 
-			// tabPage3
+			// salvageTree
 			// 
-			this.tabPage3.Controls.Add(this.bonusAddNew);
-			this.tabPage3.Controls.Add(this.label13);
-			this.tabPage3.Controls.Add(this.bonusRequires);
-			this.tabPage3.Controls.Add(this.label12);
-			this.tabPage3.Controls.Add(this.bonusAutoPowers);
-			this.tabPage3.Controls.Add(this.bonusMaxBoosts);
-			this.tabPage3.Controls.Add(this.label11);
-			this.tabPage3.Controls.Add(this.bonusMinBoosts);
-			this.tabPage3.Controls.Add(this.label10);
-			this.tabPage3.Location = new System.Drawing.Point(4, 22);
-			this.tabPage3.Name = "tabPage3";
-			this.tabPage3.Size = new System.Drawing.Size(454, 426);
-			this.tabPage3.TabIndex = 2;
-			this.tabPage3.Text = "Set Bonus";
-			this.tabPage3.UseVisualStyleBackColor = true;
+			this.salvageTree.Location = new System.Drawing.Point(120, 89);
+			this.salvageTree.Name = "salvageTree";
+			this.salvageTree.Size = new System.Drawing.Size(320, 197);
+			this.salvageTree.TabIndex = 12;
+			this.salvageTree.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.salvageTree_NodeMouseClick);
+			this.salvageTree.KeyDown += new System.Windows.Forms.KeyEventHandler(this.salvageTree_KeyDown);
+			// 
+			// label24
+			// 
+			this.label24.AutoSize = true;
+			this.label24.Location = new System.Drawing.Point(257, 320);
+			this.label24.Name = "label24";
+			this.label24.Size = new System.Drawing.Size(56, 13);
+			this.label24.TabIndex = 112;
+			this.label24.Text = "Set Rarity:";
+			// 
+			// recipeRarity
+			// 
+			this.recipeRarity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.recipeRarity.FormattingEnabled = true;
+			this.recipeRarity.Items.AddRange(new object[] {
+            "Uncommon",
+            "Rare",
+            "VeryRare"});
+			this.recipeRarity.Location = new System.Drawing.Point(319, 317);
+			this.recipeRarity.Name = "recipeRarity";
+			this.recipeRarity.Size = new System.Drawing.Size(121, 21);
+			this.recipeRarity.TabIndex = 15;
+			// 
+			// recipeSku
+			// 
+			this.recipeSku.Location = new System.Drawing.Point(120, 318);
+			this.recipeSku.MaxLength = 7;
+			this.recipeSku.Name = "recipeSku";
+			this.recipeSku.Size = new System.Drawing.Size(100, 20);
+			this.recipeSku.TabIndex = 14;
+			// 
+			// label23
+			// 
+			this.label23.AutoSize = true;
+			this.label23.Location = new System.Drawing.Point(39, 321);
+			this.label23.Name = "label23";
+			this.label23.Size = new System.Drawing.Size(75, 13);
+			this.label23.TabIndex = 109;
+			this.label23.Text = "Store Product:";
+			// 
+			// label22
+			// 
+			this.label22.AutoSize = true;
+			this.label22.Location = new System.Drawing.Point(22, 295);
+			this.label22.Name = "label22";
+			this.label22.Size = new System.Drawing.Size(92, 13);
+			this.label22.TabIndex = 108;
+			this.label22.Text = "Merit Vendor Tab:";
+			// 
+			// recipeTabName
+			// 
+			this.recipeTabName.Location = new System.Drawing.Point(120, 292);
+			this.recipeTabName.Name = "recipeTabName";
+			this.recipeTabName.Size = new System.Drawing.Size(320, 20);
+			this.recipeTabName.TabIndex = 13;
+			// 
+			// tabBonus
+			// 
+			this.tabBonus.Controls.Add(this.bonusAddNew);
+			this.tabBonus.Controls.Add(this.label13);
+			this.tabBonus.Controls.Add(this.bonusRequires);
+			this.tabBonus.Controls.Add(this.label12);
+			this.tabBonus.Controls.Add(this.bonusAutoPowers);
+			this.tabBonus.Controls.Add(this.bonusMaxBoosts);
+			this.tabBonus.Controls.Add(this.label11);
+			this.tabBonus.Controls.Add(this.bonusMinBoosts);
+			this.tabBonus.Controls.Add(this.label10);
+			this.tabBonus.Location = new System.Drawing.Point(4, 22);
+			this.tabBonus.Name = "tabBonus";
+			this.tabBonus.Size = new System.Drawing.Size(454, 426);
+			this.tabBonus.TabIndex = 2;
+			this.tabBonus.Text = "Set Bonus";
+			this.tabBonus.UseVisualStyleBackColor = true;
 			// 
 			// bonusAddNew
 			// 
-			this.bonusAddNew.Location = new System.Drawing.Point(120, 89);
+			this.bonusAddNew.Location = new System.Drawing.Point(120, 88);
 			this.bonusAddNew.Name = "bonusAddNew";
 			this.bonusAddNew.Size = new System.Drawing.Size(320, 23);
-			this.bonusAddNew.TabIndex = 8;
+			this.bonusAddNew.TabIndex = 5;
 			this.bonusAddNew.Text = "Add New Set Bonus";
 			this.bonusAddNew.UseVisualStyleBackColor = true;
 			this.bonusAddNew.Click += new System.EventHandler(this.bonusAddNew_Click);
@@ -613,7 +714,7 @@
 			// label13
 			// 
 			this.label13.AutoSize = true;
-			this.label13.Location = new System.Drawing.Point(62, 65);
+			this.label13.Location = new System.Drawing.Point(62, 64);
 			this.label13.Name = "label13";
 			this.label13.Size = new System.Drawing.Size(52, 13);
 			this.label13.TabIndex = 7;
@@ -621,10 +722,10 @@
 			// 
 			// bonusRequires
 			// 
-			this.bonusRequires.Location = new System.Drawing.Point(120, 62);
+			this.bonusRequires.Location = new System.Drawing.Point(120, 61);
 			this.bonusRequires.Name = "bonusRequires";
 			this.bonusRequires.Size = new System.Drawing.Size(320, 20);
-			this.bonusRequires.TabIndex = 6;
+			this.bonusRequires.TabIndex = 4;
 			// 
 			// label12
 			// 
@@ -640,11 +741,11 @@
 			this.bonusAutoPowers.Location = new System.Drawing.Point(120, 35);
 			this.bonusAutoPowers.Name = "bonusAutoPowers";
 			this.bonusAutoPowers.Size = new System.Drawing.Size(320, 20);
-			this.bonusAutoPowers.TabIndex = 4;
+			this.bonusAutoPowers.TabIndex = 3;
 			// 
 			// bonusMaxBoosts
 			// 
-			this.bonusMaxBoosts.Location = new System.Drawing.Point(390, 9);
+			this.bonusMaxBoosts.Location = new System.Drawing.Point(390, 8);
 			this.bonusMaxBoosts.Maximum = new decimal(new int[] {
             6,
             0,
@@ -657,7 +758,7 @@
             0});
 			this.bonusMaxBoosts.Name = "bonusMaxBoosts";
 			this.bonusMaxBoosts.Size = new System.Drawing.Size(50, 20);
-			this.bonusMaxBoosts.TabIndex = 3;
+			this.bonusMaxBoosts.TabIndex = 2;
 			this.bonusMaxBoosts.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
 			this.bonusMaxBoosts.Value = new decimal(new int[] {
             6,
@@ -668,7 +769,7 @@
 			// label11
 			// 
 			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(295, 12);
+			this.label11.Location = new System.Drawing.Point(295, 11);
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(89, 13);
 			this.label11.TabIndex = 2;
@@ -676,7 +777,7 @@
 			// 
 			// bonusMinBoosts
 			// 
-			this.bonusMinBoosts.Location = new System.Drawing.Point(120, 10);
+			this.bonusMinBoosts.Location = new System.Drawing.Point(120, 9);
 			this.bonusMinBoosts.Name = "bonusMinBoosts";
 			this.bonusMinBoosts.Size = new System.Drawing.Size(50, 20);
 			this.bonusMinBoosts.TabIndex = 1;
@@ -690,113 +791,72 @@
 			// label10
 			// 
 			this.label10.AutoSize = true;
-			this.label10.Location = new System.Drawing.Point(28, 12);
+			this.label10.Location = new System.Drawing.Point(28, 11);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(86, 13);
 			this.label10.TabIndex = 0;
 			this.label10.Text = "Minimum Boosts:";
 			// 
-			// tabPage4
+			// salvageAdd
 			// 
-			this.tabPage4.Controls.Add(this.label24);
-			this.tabPage4.Controls.Add(this.recipeRarity);
-			this.tabPage4.Controls.Add(this.recipeSku);
-			this.tabPage4.Controls.Add(this.label23);
-			this.tabPage4.Controls.Add(this.label22);
-			this.tabPage4.Controls.Add(this.recipeTabName);
-			this.tabPage4.Location = new System.Drawing.Point(4, 22);
-			this.tabPage4.Name = "tabPage4";
-			this.tabPage4.Size = new System.Drawing.Size(454, 426);
-			this.tabPage4.TabIndex = 3;
-			this.tabPage4.Text = "Recipes";
-			this.tabPage4.UseVisualStyleBackColor = true;
+			this.salvageAdd.Location = new System.Drawing.Point(390, 60);
+			this.salvageAdd.Name = "salvageAdd";
+			this.salvageAdd.Size = new System.Drawing.Size(50, 23);
+			this.salvageAdd.TabIndex = 11;
+			this.salvageAdd.Text = "Add";
+			this.salvageAdd.UseVisualStyleBackColor = true;
+			this.salvageAdd.Click += new System.EventHandler(this.salvageAdd_Click);
 			// 
-			// label24
+			// salvageList
 			// 
-			this.label24.AutoSize = true;
-			this.label24.Location = new System.Drawing.Point(276, 38);
-			this.label24.Name = "label24";
-			this.label24.Size = new System.Drawing.Size(37, 13);
-			this.label24.TabIndex = 112;
-			this.label24.Text = "Rarity:";
+			this.salvageList.DisplayMember = "listDisplay";
+			this.salvageList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.salvageList.FormattingEnabled = true;
+			this.salvageList.Location = new System.Drawing.Point(120, 61);
+			this.salvageList.Name = "salvageList";
+			this.salvageList.Size = new System.Drawing.Size(264, 21);
+			this.salvageList.TabIndex = 10;
 			// 
-			// recipeRarity
+			// label17
 			// 
-			this.recipeRarity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.recipeRarity.FormattingEnabled = true;
-			this.recipeRarity.Items.AddRange(new object[] {
-            "Uncommon",
-            "Rare",
-            "VeryRare"});
-			this.recipeRarity.Location = new System.Drawing.Point(319, 34);
-			this.recipeRarity.Name = "recipeRarity";
-			this.recipeRarity.Size = new System.Drawing.Size(121, 21);
-			this.recipeRarity.TabIndex = 111;
-			// 
-			// recipeSku
-			// 
-			this.recipeSku.Location = new System.Drawing.Point(120, 35);
-			this.recipeSku.MaxLength = 7;
-			this.recipeSku.Name = "recipeSku";
-			this.recipeSku.Size = new System.Drawing.Size(100, 20);
-			this.recipeSku.TabIndex = 110;
-			// 
-			// label23
-			// 
-			this.label23.AutoSize = true;
-			this.label23.Location = new System.Drawing.Point(39, 38);
-			this.label23.Name = "label23";
-			this.label23.Size = new System.Drawing.Size(75, 13);
-			this.label23.TabIndex = 109;
-			this.label23.Text = "Store Product:";
-			// 
-			// label22
-			// 
-			this.label22.AutoSize = true;
-			this.label22.Location = new System.Drawing.Point(22, 12);
-			this.label22.Name = "label22";
-			this.label22.Size = new System.Drawing.Size(92, 13);
-			this.label22.TabIndex = 108;
-			this.label22.Text = "Merit Vendor Tab:";
-			// 
-			// recipeTabName
-			// 
-			this.recipeTabName.Location = new System.Drawing.Point(120, 9);
-			this.recipeTabName.Name = "recipeTabName";
-			this.recipeTabName.Size = new System.Drawing.Size(320, 20);
-			this.recipeTabName.TabIndex = 107;
+			this.label17.AutoSize = true;
+			this.label17.Location = new System.Drawing.Point(32, 65);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(82, 13);
+			this.label17.TabIndex = 128;
+			this.label17.Text = "Select Salvage:";
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(484, 475);
-			this.Controls.Add(this.tabControl1);
+			this.Controls.Add(this.tabs);
 			this.Name = "Form1";
 			this.Text = "Inventor";
 			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-			this.tabControl1.ResumeLayout(false);
-			this.tabPage1.ResumeLayout(false);
-			this.tabPage1.PerformLayout();
+			this.tabs.ResumeLayout(false);
+			this.tabSet.ResumeLayout(false);
+			this.tabSet.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.slotMinLevel)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.setMaxLevel)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.setMinLevel)).EndInit();
-			this.tabPage2.ResumeLayout(false);
-			this.tabPage2.PerformLayout();
-			this.tabPage3.ResumeLayout(false);
-			this.tabPage3.PerformLayout();
+			this.tabBoosts.ResumeLayout(false);
+			this.tabBoosts.PerformLayout();
+			this.tabRecipes.ResumeLayout(false);
+			this.tabRecipes.PerformLayout();
+			this.tabBonus.ResumeLayout(false);
+			this.tabBonus.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.bonusMaxBoosts)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.bonusMinBoosts)).EndInit();
-			this.tabPage4.ResumeLayout(false);
-			this.tabPage4.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
 
-		private System.Windows.Forms.TabControl tabControl1;
-		private System.Windows.Forms.TabPage tabPage1;
+		private System.Windows.Forms.TabControl tabs;
+		private System.Windows.Forms.TabPage tabSet;
 		private System.Windows.Forms.ListBox bonusList;
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.ListBox boostList;
@@ -816,8 +876,8 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox setDisplayName;
-		private System.Windows.Forms.TabPage tabPage2;
-		private System.Windows.Forms.TabPage tabPage3;
+		private System.Windows.Forms.TabPage tabBoosts;
+		private System.Windows.Forms.TabPage tabBonus;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.TextBox bonusRequires;
 		private System.Windows.Forms.Label label12;
@@ -828,24 +888,24 @@
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Button bonusAddNew;
 		private System.Windows.Forms.TextBox boostLetter;
-		private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.Label boostLetterLabel;
 		private System.Windows.Forms.TextBox boostDisplayName;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.TextBox boostName;
-		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.Label boostNameLabel;
 		private System.Windows.Forms.ComboBox boostTypeList;
 		private System.Windows.Forms.Label label18;
 		private System.Windows.Forms.Button boostAddAspect;
 		private System.Windows.Forms.ListBox boostAspectList;
 		private System.Windows.Forms.Label label14;
-		private System.Windows.Forms.Button boostAddNew;
+		private System.Windows.Forms.Button boostSave;
 		private System.Windows.Forms.TextBox boostDescription;
 		private System.Windows.Forms.Label label19;
 		private System.Windows.Forms.TextBox setIconName;
 		private System.Windows.Forms.Label label20;
 		private System.Windows.Forms.TextBox setBoostsAllowed;
 		private System.Windows.Forms.Label label21;
-		private System.Windows.Forms.TabPage tabPage4;
+		private System.Windows.Forms.TabPage tabRecipes;
 		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.TextBox recipeTabName;
 		private System.Windows.Forms.TextBox recipeSku;
@@ -856,6 +916,11 @@
 		private System.Windows.Forms.Button saveJson;
 		private System.Windows.Forms.TextBox boostShortHelp;
 		private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TreeView salvageTree;
+        private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.Button salvageAdd;
+		private System.Windows.Forms.ComboBox salvageList;
+		private System.Windows.Forms.Label label17;
 	}
 }
 

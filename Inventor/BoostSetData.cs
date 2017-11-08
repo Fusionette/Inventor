@@ -54,6 +54,7 @@ namespace Inventor
 		public string description;
 		public string shortHelp;
 		public List<BoostType> aspects;
+		public List<string> salvage;
 	}
 
 	class BoostSetData
@@ -114,7 +115,7 @@ namespace Inventor
 			return s;
 		}
 
-		public string GetDropRecipe(List<int> craftingCost)
+		public string GetDropRecipe(List<int> craftingCost, List<Salvage> salvageList)
 		{
 			string s = String.Empty;
 			foreach (Boost boost in boostList)
@@ -136,7 +137,18 @@ namespace Inventor
 					s += "\tNumUses 1" + Environment.NewLine;
 					s += "\tCreationCost " + craftingCost[level - 1] + Environment.NewLine;
 					s += "\tSellToVendor " + (level * 200) + Environment.NewLine;
-					s += "\tCreatesEnhancement 1" + Environment.NewLine + Environment.NewLine;
+					s += "\tCreatesEnhancement 1" + Environment.NewLine;
+					if (boost.salvage != null)
+					{
+						s += Environment.NewLine;
+						foreach (string sid in boost.salvage)
+						{
+							Salvage salvage = salvageList.Find(x => x.name.Equals(sid));
+							if (salvage.level == Salvage.Level.Low && level < 26) s += "\tSalvageComponent 1 " + sid + Environment.NewLine;
+							else if (salvage.level == Salvage.Level.Mid && level > 25 && level < 41) s += "\tSalvageComponent 1 " + sid + Environment.NewLine;
+							else if (salvage.level == Salvage.Level.High && level > 40) s += "\tSalvageComponent 1 " + sid + Environment.NewLine;
+						}
+					}
 					s += "}" + Environment.NewLine + Environment.NewLine;
 				}
 			}
