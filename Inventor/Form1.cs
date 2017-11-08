@@ -233,6 +233,7 @@ namespace Inventor
 			boostLetter.Text = boost.letter;
 			boostName.Text = boost.name;
 			boostDisplayName.Text = boost.displayName;
+			boostShortHelp.Text = boost.shortHelp;
 			boostAspectList.Items.Clear();
 			if (boost.aspects != null) foreach (BoostType type in boost.aspects) boostAspectList.Items.Add(type);
 			boostDescription.Text = boost.description;
@@ -242,15 +243,19 @@ namespace Inventor
 		private void UpdateAspectList()
 		{
 			string boostList = String.Empty;
-			string boostDescriptionList = String.Empty;
+			string descriptionList = String.Empty;
+			string shortHelpList = string.Empty;
 			foreach (BoostType type in boostAspectList.Items)
 			{
 				boostList += type.displayName + "/";
-				boostDescriptionList += type.description + " ";
+				shortHelpList += type.shortHelp + ", ";
+				descriptionList += type.description + " ";
 			}
 			if (boostList.EndsWith("/")) boostList = boostList.Substring(0, boostList.Length - 1);
+			if (shortHelpList.EndsWith(", ")) shortHelpList = shortHelpList.Substring(0, shortHelpList.Length - 2);
 			boostDisplayName.Text = boostList;
-			boostDescription.Text = boostDescriptionList;
+			boostShortHelp.Text = shortHelpList;
+			boostDescription.Text = descriptionList;
 		}
 
 		private void boostAddAspect_Click(object sender, EventArgs e)
@@ -271,9 +276,10 @@ namespace Inventor
 
 				boost.letter = boostLetter.Text.ToUpper();
 				boost.name = boostName.Text.Trim();
-				boost.displayName = boostDisplayName.Text.Trim();
-				boost.description = boostDescription.Text.Trim();
-				boost.aspects = new List<BoostType>();
+                boost.displayName = boostDisplayName.Text.Trim();
+                boost.description = boostDescription.Text.Trim();
+                boost.shortHelp = boostShortHelp.Text.Trim();
+                boost.aspects = new List<BoostType>();
 				foreach (BoostType type in boostAspectList.Items) boost.aspects.Add(type);
 
 				// Rebuild the Enhancements list to keep it sorted and prevent duplicate letters.

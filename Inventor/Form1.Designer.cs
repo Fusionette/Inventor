@@ -56,6 +56,8 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.setDisplayName = new System.Windows.Forms.TextBox();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.boostShortHelp = new System.Windows.Forms.TextBox();
+			this.label25 = new System.Windows.Forms.Label();
 			this.boostDescription = new System.Windows.Forms.TextBox();
 			this.label19 = new System.Windows.Forms.Label();
 			this.boostAddNew = new System.Windows.Forms.Button();
@@ -415,6 +417,8 @@
 			// 
 			// tabPage2
 			// 
+			this.tabPage2.Controls.Add(this.boostShortHelp);
+			this.tabPage2.Controls.Add(this.label25);
 			this.tabPage2.Controls.Add(this.boostDescription);
 			this.tabPage2.Controls.Add(this.label19);
 			this.tabPage2.Controls.Add(this.boostAddNew);
@@ -437,18 +441,34 @@
 			this.tabPage2.Text = "Enhancement";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
+			// boostShortHelp
+			// 
+			this.boostShortHelp.Location = new System.Drawing.Point(120, 116);
+			this.boostShortHelp.Name = "boostShortHelp";
+			this.boostShortHelp.Size = new System.Drawing.Size(320, 20);
+			this.boostShortHelp.TabIndex = 6;
+			// 
+			// label25
+			// 
+			this.label25.AutoSize = true;
+			this.label25.Location = new System.Drawing.Point(54, 119);
+			this.label25.Name = "label25";
+			this.label25.Size = new System.Drawing.Size(60, 13);
+			this.label25.TabIndex = 118;
+			this.label25.Text = "Short Help:";
+			// 
 			// boostDescription
 			// 
-			this.boostDescription.Location = new System.Drawing.Point(121, 119);
+			this.boostDescription.Location = new System.Drawing.Point(120, 142);
 			this.boostDescription.Multiline = true;
 			this.boostDescription.Name = "boostDescription";
 			this.boostDescription.Size = new System.Drawing.Size(320, 96);
-			this.boostDescription.TabIndex = 6;
+			this.boostDescription.TabIndex = 7;
 			// 
 			// label19
 			// 
 			this.label19.AutoSize = true;
-			this.label19.Location = new System.Drawing.Point(52, 119);
+			this.label19.Location = new System.Drawing.Point(51, 145);
 			this.label19.Name = "label19";
 			this.label19.Size = new System.Drawing.Size(63, 13);
 			this.label19.TabIndex = 116;
@@ -456,10 +476,10 @@
 			// 
 			// boostAddNew
 			// 
-			this.boostAddNew.Location = new System.Drawing.Point(122, 322);
+			this.boostAddNew.Location = new System.Drawing.Point(120, 345);
 			this.boostAddNew.Name = "boostAddNew";
 			this.boostAddNew.Size = new System.Drawing.Size(320, 23);
-			this.boostAddNew.TabIndex = 8;
+			this.boostAddNew.TabIndex = 9;
 			this.boostAddNew.Text = "Add or Edit Enhancement";
 			this.boostAddNew.UseVisualStyleBackColor = true;
 			this.boostAddNew.Click += new System.EventHandler(this.boostAddNew_Click);
@@ -467,7 +487,7 @@
 			// label14
 			// 
 			this.label14.AutoSize = true;
-			this.label14.Location = new System.Drawing.Point(68, 223);
+			this.label14.Location = new System.Drawing.Point(66, 246);
 			this.label14.Name = "label14";
 			this.label14.Size = new System.Drawing.Size(48, 13);
 			this.label14.TabIndex = 114;
@@ -477,18 +497,18 @@
 			// 
 			this.boostAspectList.DisplayMember = "displayName";
 			this.boostAspectList.FormattingEnabled = true;
-			this.boostAspectList.Location = new System.Drawing.Point(122, 221);
+			this.boostAspectList.Location = new System.Drawing.Point(120, 244);
 			this.boostAspectList.Name = "boostAspectList";
 			this.boostAspectList.Size = new System.Drawing.Size(320, 95);
-			this.boostAspectList.TabIndex = 7;
+			this.boostAspectList.TabIndex = 8;
 			this.boostAspectList.KeyDown += new System.Windows.Forms.KeyEventHandler(this.boostAspectList_KeyDown);
 			// 
 			// boostAddAspect
 			// 
-			this.boostAddAspect.Location = new System.Drawing.Point(392, 35);
+			this.boostAddAspect.Location = new System.Drawing.Point(390, 61);
 			this.boostAddAspect.Name = "boostAddAspect";
 			this.boostAddAspect.Size = new System.Drawing.Size(50, 23);
-			this.boostAddAspect.TabIndex = 3;
+			this.boostAddAspect.TabIndex = 4;
 			this.boostAddAspect.Text = "Add";
 			this.boostAddAspect.UseVisualStyleBackColor = true;
 			this.boostAddAspect.Click += new System.EventHandler(this.boostAddAspect_Click);
@@ -498,15 +518,15 @@
 			this.boostTypeList.DisplayMember = "displayName";
 			this.boostTypeList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.boostTypeList.FormattingEnabled = true;
-			this.boostTypeList.Location = new System.Drawing.Point(121, 36);
+			this.boostTypeList.Location = new System.Drawing.Point(120, 62);
 			this.boostTypeList.Name = "boostTypeList";
 			this.boostTypeList.Size = new System.Drawing.Size(264, 21);
-			this.boostTypeList.TabIndex = 2;
+			this.boostTypeList.TabIndex = 3;
 			// 
 			// label18
 			// 
 			this.label18.AutoSize = true;
-			this.label18.Location = new System.Drawing.Point(39, 40);
+			this.label18.Location = new System.Drawing.Point(38, 66);
 			this.label18.Name = "label18";
 			this.label18.Size = new System.Drawing.Size(76, 13);
 			this.label18.TabIndex = 113;
@@ -514,15 +534,15 @@
 			// 
 			// boostName
 			// 
-			this.boostName.Location = new System.Drawing.Point(121, 90);
+			this.boostName.Location = new System.Drawing.Point(120, 36);
 			this.boostName.Name = "boostName";
 			this.boostName.Size = new System.Drawing.Size(320, 20);
-			this.boostName.TabIndex = 5;
+			this.boostName.TabIndex = 2;
 			// 
 			// label17
 			// 
 			this.label17.AutoSize = true;
-			this.label17.Location = new System.Drawing.Point(39, 93);
+			this.label17.Location = new System.Drawing.Point(38, 39);
 			this.label17.Name = "label17";
 			this.label17.Size = new System.Drawing.Size(76, 13);
 			this.label17.TabIndex = 111;
@@ -530,15 +550,15 @@
 			// 
 			// boostDisplayName
 			// 
-			this.boostDisplayName.Location = new System.Drawing.Point(121, 64);
+			this.boostDisplayName.Location = new System.Drawing.Point(120, 90);
 			this.boostDisplayName.Name = "boostDisplayName";
 			this.boostDisplayName.Size = new System.Drawing.Size(320, 20);
-			this.boostDisplayName.TabIndex = 4;
+			this.boostDisplayName.TabIndex = 5;
 			// 
 			// label16
 			// 
 			this.label16.AutoSize = true;
-			this.label16.Location = new System.Drawing.Point(8, 67);
+			this.label16.Location = new System.Drawing.Point(7, 93);
 			this.label16.Name = "label16";
 			this.label16.Size = new System.Drawing.Size(107, 13);
 			this.label16.TabIndex = 109;
@@ -546,7 +566,7 @@
 			// 
 			// boostLetter
 			// 
-			this.boostLetter.Location = new System.Drawing.Point(121, 10);
+			this.boostLetter.Location = new System.Drawing.Point(120, 10);
 			this.boostLetter.MaxLength = 1;
 			this.boostLetter.Name = "boostLetter";
 			this.boostLetter.Size = new System.Drawing.Size(50, 20);
@@ -556,7 +576,7 @@
 			// label15
 			// 
 			this.label15.AutoSize = true;
-			this.label15.Location = new System.Drawing.Point(20, 12);
+			this.label15.Location = new System.Drawing.Point(19, 13);
 			this.label15.Name = "label15";
 			this.label15.Size = new System.Drawing.Size(95, 13);
 			this.label15.TabIndex = 2;
@@ -834,6 +854,8 @@
 		private System.Windows.Forms.ComboBox recipeRarity;
 		private System.Windows.Forms.Button loadJson;
 		private System.Windows.Forms.Button saveJson;
+		private System.Windows.Forms.TextBox boostShortHelp;
+		private System.Windows.Forms.Label label25;
 	}
 }
 

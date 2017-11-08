@@ -23,6 +23,7 @@ namespace Inventor
 	{
 		public string displayName { get; set; }
 		public string description;
+		public string shortHelp;
 		public List<List<AttribMod>> attribMods;
 	}
 
@@ -51,6 +52,7 @@ namespace Inventor
 		public string name;
 		public string displayName;
 		public string description;
+		public string shortHelp;
 		public List<BoostType> aspects;
 	}
 
@@ -346,7 +348,7 @@ namespace Inventor
 			s += "\tMinSlotLevel         " + (minSlotLevel - 1) + Environment.NewLine;
 			s += "\tBoostAlwaysCountForSet True" + Environment.NewLine;
 			if (attuned) s += "\tBoostLicenseLevel    0" + Environment.NewLine;
-			s += "\tDisplayShortHelp     \"" + PString("Set: " + displayName) + "\"" + Environment.NewLine;
+			s += "\tDisplayShortHelp     \"" + PString(boost.shortHelp) + "\"" + Environment.NewLine;
 			s += "\tDisplayHelp          \"" + PString(boost.description) + "\"" + Environment.NewLine;
 			s += "\tIconName             \"" + iconName + "\"" + Environment.NewLine;
 			s += "\tTimeToConfirm        0" + Environment.NewLine + Environment.NewLine;

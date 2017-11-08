@@ -1,9 +1,11 @@
-# Inventor
+Inventor
+========
 
 This tool can create and edit Invention Sets in a format that the game client can read,
 and will also generate recipe and enhancement thumbnail images to go with them.
 
-# Usage
+Usage
+-----
 
 When you start the program, it will dump its configuration files to the "config" folder.
 This is not very elegant and will be changed in the future, but it is a quick and dirty

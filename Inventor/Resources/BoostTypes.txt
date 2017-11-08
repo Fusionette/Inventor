@@ -2,6 +2,7 @@
   {
     "displayName": "Accuracy",
     "description": "Enhances accuracy by {Boost.Attrib.Accuracy.Scale}%.",
+    "shortHelp": "+ACC",
     "attribMods": [
       [
         {
@@ -40,6 +41,7 @@
   {
     "displayName": "Damage",
     "description": "Enhances damage by {Boost.Attrib.Damage.Scale}%.",
+    "shortHelp": "+DMG",
     "attribMods": [
       [
         {
@@ -246,6 +248,7 @@
   {
     "displayName": "Endurance",
     "description": "Reduces endurance cost by {Boost.Attrib.Endurance.Scale}%.",
+    "shortHelp": "-End Cost",
     "attribMods": [
       [
         {
@@ -284,6 +287,7 @@
   {
     "displayName": "Knockback",
     "description": "Increases knockback distance by {Boost.Attrib.Knockback.Scale}%.",
+    "shortHelp": "+Knockback",
     "attribMods": [
       [
         {
@@ -346,6 +350,7 @@
   {
     "displayName": "Recharge",
     "description": "Increases recharge rate by {Boost.Attrib.Recharge.Scale}%.",
+    "shortHelp": "+Rech",
     "attribMods": [
       [
         {
@@ -384,6 +389,7 @@
   {
     "displayName": "Knockback to Knockdown",
     "description": "Converts any Knockback this power deals into Knockdown. Some powers may have their chance to Knockdown reduced when this enhancement is slotted.",
+    "shortHelp": "-Knockback",
     "attribMods": [
       [
         {
