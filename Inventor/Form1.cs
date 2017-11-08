@@ -178,12 +178,12 @@ namespace Inventor
 
 				foreach (Boost boost in boostSet.boostList)
 				{
-					enhancementsList += "Boosts.Crafted.Crafted_" + boost.name + "\t" + boostSet.name + ".png\n";
-					enhancementsList += "Boosts.Attuned.Attuned_" + boost.name + "\tAttuned_" + boostSet.name + ".png\n";
-					if (config.makeSuperior) enhancementsList += "Boosts.Superior.Superior_" + boost.name + "\tSuperior_" + boostSet.name + ".png\n";
+					enhancementsList += "Boosts.Crafted.Crafted_" + boost.name + "\t" + boostSet.name + ".png" + Environment.NewLine;
+					enhancementsList += "Boosts.Attuned.Attuned_" + boost.name + "\tAttuned_" + boostSet.name + ".png" + Environment.NewLine;
+					if (config.makeSuperior) enhancementsList += "Boosts.Superior.Superior_" + boost.name + "\tSuperior_" + boostSet.name + ".png" + Environment.NewLine;
 					for (int i = boostSet.minLevel; i <= boostSet.maxLevel; i++)
 					{
-						recipesList += boost.name + "_" + i + "\t" + boostSet.name + ".png\n";
+						recipesList += boost.name + "_" + i + "\t" + boostSet.name + ".png" + Environment.NewLine;
 					}
 				}
 
