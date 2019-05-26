@@ -238,8 +238,9 @@ namespace Inventor
 			boostShortHelp.Text = boost.shortHelp;
 			boostAspectList.Items.Clear();
 			if (boost.aspects != null) foreach (BoostType type in boost.aspects) boostAspectList.Items.Add(type);
-			boostDescription.Text = boost.description;
-			boostLetter.TextChanged += boostLetter_TextChanged;
+            boostDescription.Text = boost.description;
+            boostSlotRequires.Text = boost.slotRequires;
+            boostLetter.TextChanged += boostLetter_TextChanged;
 			UpdateSalvageTree(boost);
 		}
 
@@ -281,8 +282,9 @@ namespace Inventor
 				boost.name = boostName.Text.Trim();
 				boost.displayName = boostDisplayName.Text.Trim();
 				boost.description = boostDescription.Text.Trim();
-				boost.shortHelp = boostShortHelp.Text.Trim();
-				boost.aspects = new List<BoostType>();
+                boost.shortHelp = boostShortHelp.Text.Trim();
+                boost.slotRequires = boostSlotRequires.Text.Trim();
+                boost.aspects = new List<BoostType>();
 				foreach (BoostType type in boostAspectList.Items) boost.aspects.Add(type);
 
 				boost.salvage = new List<string>();
@@ -366,7 +368,7 @@ namespace Inventor
 		{
 			setName.Text = setDisplayName.Text.Trim().Replace(" ", "_").Replace("'", String.Empty);
 			setIconName.Text = "E_ICON_" + setName.Text;
-			recipeTabName.Text = "IO Set|Recipe|" + setGroupName.Text + "|" + setDisplayName.Text.Trim();
+			recipeTabName.Text = "Recipe|IO Set|" + setGroupName.Text + "|" + setDisplayName.Text.Trim();
 		}
 
 		private void setGroupName_SelectedIndexChanged(object sender, EventArgs e)
@@ -377,7 +379,7 @@ namespace Inventor
 				conversionGroups.Text = group.conversionGroup;
 				setBoostsAllowed.Text = group.boostsAllowed;
 			}
-			recipeTabName.Text = "IO Set|Recipe|" + setGroupName.Text + "|" + setDisplayName.Text.Trim();
+			recipeTabName.Text = "Recipe|IO Set|" + setGroupName.Text + "|" + setDisplayName.Text.Trim();
 			UpdateBoostSet();
 		}
 

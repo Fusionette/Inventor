@@ -1,5 +1,6 @@
 [
   {
+    "name": "Boosts_Accuracy_33",
     "displayName": "Accuracy",
     "description": "Enhances accuracy by {Boost.Attrib.Accuracy.Scale}%.",
     "shortHelp": "+ACC",
@@ -39,6 +40,7 @@
     ]
   },
   {
+    "name": "Boosts_Damage_33",
     "displayName": "Damage",
     "description": "Enhances damage by {Boost.Attrib.Damage.Scale}%.",
     "shortHelp": "+DMG",
@@ -246,6 +248,7 @@
     ]
   },
   {
+    "name": "Boosts_EnduranceDiscount_33",
     "displayName": "Endurance",
     "description": "Reduces endurance cost by {Boost.Attrib.Endurance.Scale}%.",
     "shortHelp": "-End Cost",
@@ -285,6 +288,7 @@
     ]
   },
   {
+    "name": "Boosts_Knockback_60",
     "displayName": "Knockback",
     "description": "Increases knockback distance by {Boost.Attrib.Knockback.Scale}%.",
     "shortHelp": "+Knockback",
@@ -348,6 +352,47 @@
     ]
   },
   {
+    "name": "Boosts_Range_20",
+    "displayName": "Range",
+    "description": "Increases range by {Boost.Attrib.Range.Scale}%.",
+    "shortHelp": "+Range",
+    "attribMods": [
+      [
+        {
+          "name": "Range",
+          "table": "Melee_Boosts_20",
+          "attrib": "kRange",
+          "scale": "1.000"
+        }
+      ],
+      [
+        {
+          "name": "Range",
+          "table": "Melee_Boosts_20",
+          "attrib": "kRange",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Range",
+          "table": "Melee_Boosts_20",
+          "attrib": "kRange",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Range",
+          "table": "Melee_Boosts_20",
+          "attrib": "kRange",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_RechargeTime_33",
     "displayName": "Recharge",
     "description": "Increases recharge rate by {Boost.Attrib.Recharge.Scale}%.",
     "shortHelp": "+Rech",
@@ -387,6 +432,47 @@
     ]
   },
   {
+    "name": "Special_FastSnipe",
+    "displayName": "Fast Snipe",
+    "description": "This enhancement will cause all of your snipe powers to become instant-cast.",
+    "shortHelp": "Special",
+    "attribMods": [
+      [
+        {
+          "name": "FastSnipe",
+          "table": "Melee_Ones",
+          "attrib": "kNull",
+          "scale": "1.000"
+        }
+      ],
+      [
+        {
+          "name": "FastSnipe",
+          "table": "Melee_Ones",
+          "attrib": "kNull",
+          "scale": "1.000"
+        }
+      ],
+      [
+        {
+          "name": "FastSnipe",
+          "table": "Melee_Ones",
+          "attrib": "kNull",
+          "scale": "1.000"
+        }
+      ],
+      [
+        {
+          "name": "FastSnipe",
+          "table": "Melee_Ones",
+          "attrib": "kNull",
+          "scale": "1.000"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Special_KnockConvert",
     "displayName": "Knockback to Knockdown",
     "description": "Converts any Knockback this power deals into Knockdown. Some powers may have their chance to Knockdown reduced when this enhancement is slotted.",
     "shortHelp": "-Knockback",

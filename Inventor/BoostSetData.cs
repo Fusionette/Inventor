@@ -53,6 +53,7 @@ namespace Inventor
 		public string displayName;
 		public string description;
 		public string shortHelp;
+		public string slotRequires;
 		public List<BoostType> aspects;
 		public List<string> salvage;
 	}
@@ -124,7 +125,7 @@ namespace Inventor
 				{
 					s += "DetailRecipe " + boost.name + "_" + level + Environment.NewLine;
 					s += "{" + Environment.NewLine;
-					s += "\tDisplayName \"" + PString(displayName + ": " + boost.displayName) + "\"" + Environment.NewLine;
+					s += "\tDisplayName \"" + PString(displayName + ": " + boost.displayName + " (Recipe)") + "\"" + Environment.NewLine;
 					s += "\tDisplayHelp \"" + PString("This recipe builds the " + displayName + ": " + boost.displayName + " Enhancement") + "\"" + Environment.NewLine;
 					s += "\tDisplayTabName \"P1273912828\"" + Environment.NewLine;
 					s += "\tType Drop" + Environment.NewLine;
@@ -353,12 +354,13 @@ namespace Inventor
 			s += "\tRadius               0" + Environment.NewLine;
 			s += "\tArc                  0" + Environment.NewLine;
 			s += "\tBoostsAllowed        kScience_Boost, kTechnology_Boost, kMagic_Boost, kMutation_Boost, kNatural_Boost" + (String.IsNullOrEmpty(boostsAllowed) ? String.Empty : ", " + boostsAllowed) + Environment.NewLine;
-			if (!String.IsNullOrEmpty(catalyzed)) s += "\tBoostCatalystConversion Boosts." + catalyzed + boost.name + "." + catalyzed + boost.name + Environment.NewLine;
-			s += "\t" + (attuned ? "BoostUsePlayerLevel  " : "BoostBoostable       ") + "True" + Environment.NewLine;
+            if (!String.IsNullOrEmpty(catalyzed)) s += "\tBoostCatalystConversion Boosts." + catalyzed + boost.name + "." + catalyzed + boost.name + Environment.NewLine;
+            s += "\t" + (attuned ? "BoostUsePlayerLevel  " : "BoostBoostable       ") + "True" + Environment.NewLine;
 			s += "\tBoostIgnoreEffectiveness True" + Environment.NewLine;
 			s += "\tBoostCombinable      False" + Environment.NewLine;
 			s += "\tMinSlotLevel         " + (minSlotLevel - 1) + Environment.NewLine;
-			s += "\tBoostAlwaysCountForSet True" + Environment.NewLine;
+            if (!String.IsNullOrEmpty(boost.slotRequires)) s += "\tSlotRequires " + boost.slotRequires + Environment.NewLine;
+            s += "\tBoostAlwaysCountForSet True" + Environment.NewLine;
 			if (attuned) s += "\tBoostLicenseLevel    0" + Environment.NewLine;
 			s += "\tDisplayShortHelp     \"" + PString(boost.shortHelp) + "\"" + Environment.NewLine;
 			s += "\tDisplayHelp          \"" + PString(boost.description) + "\"" + Environment.NewLine;
@@ -387,7 +389,7 @@ namespace Inventor
 					s += "\t\tChance               1" + Environment.NewLine;
 					s += "\t\tNearGround           kFalse" + Environment.NewLine;
 					s += "\t\tCancelOnMiss         kFalse" + Environment.NewLine;
-					s += "\t\tBoostTemplate        kTrue" + Environment.NewLine;
+					s += "\t\tBoostTemplate        " + (attrib.attrib == "kNull" ? "kFalse" : "kTrue") + Environment.NewLine;
 					s += "\t\tStackType            kReplace" + Environment.NewLine;
 					if (!String.IsNullOrEmpty(attrib.reward)) s += "\t\tReward               " + attrib.reward + Environment.NewLine;
 					s += "\t}" + Environment.NewLine;
