@@ -288,6 +288,46 @@
     ]
   },
   {
+    "name": "Boosts_Interrupt_40",
+    "displayName": "Interrupt",
+    "description": "Reduces interrupt time by {Boost.Attrib.Interrupt.Scale}%.",
+    "shortHelp": "-Interrupt",
+    "attribMods": [
+      [
+        {
+          "name": "Interrupt",
+          "table": "Melee_Boosts_40",
+          "attrib": "kInterruptTime",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Interrupt",
+          "table": "Melee_Boosts_40",
+          "attrib": "kInterruptTime",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Interrupt",
+          "table": "Melee_Boosts_40",
+          "attrib": "kInterruptTime",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Interrupt",
+          "table": "Melee_Boosts_40",
+          "attrib": "kInterruptTime",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
     "name": "Boosts_Knockback_60",
     "displayName": "Knockback",
     "description": "Increases knockback distance by {Boost.Attrib.Knockback.Scale}%.",
@@ -434,7 +474,7 @@
   {
     "name": "Special_FastSnipe",
     "displayName": "Fast Snipe",
-    "description": "This enhancement will cause all of your snipe powers to become instant-cast.",
+    "description": "All of your snipe powers become instant-cast.",
     "shortHelp": "Special",
     "attribMods": [
       [

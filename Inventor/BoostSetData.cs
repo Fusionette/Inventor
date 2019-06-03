@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
@@ -360,7 +360,7 @@ namespace Inventor
 			s += "\tBoostCombinable      False" + Environment.NewLine;
 			s += "\tMinSlotLevel         " + (minSlotLevel - 1) + Environment.NewLine;
             if (!String.IsNullOrEmpty(boost.slotRequires)) s += "\tSlotRequires " + boost.slotRequires + Environment.NewLine;
-            s += "\tBoostAlwaysCountForSet True" + Environment.NewLine;
+            if (attuned || rarity == "VeryRare") s += "\tBoostAlwaysCountForSet True" + Environment.NewLine;
 			if (attuned) s += "\tBoostLicenseLevel    0" + Environment.NewLine;
 			s += "\tDisplayShortHelp     \"" + PString(boost.shortHelp) + "\"" + Environment.NewLine;
 			s += "\tDisplayHelp          \"" + PString(boost.description) + "\"" + Environment.NewLine;
