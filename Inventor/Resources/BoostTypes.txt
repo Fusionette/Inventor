@@ -40,6 +40,46 @@
     ]
   },
   {
+    "name": "Boosts_Confuse_33",
+    "displayName": "Confusion Duration",
+    "description": "Increases confusion duration by {Boost.Attrib.Mez.Scale}%.",
+    "shortHelp": "+Confuse",
+    "attribMods": [
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kConfused",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kConfused",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kConfused",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kConfused",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
     "name": "Boosts_Damage_33",
     "displayName": "Damage",
     "description": "Enhances damage by {Boost.Attrib.Damage.Scale}%.",
@@ -288,6 +328,214 @@
     ]
   },
   {
+    "name": "Boosts_EndMod_33",
+    "displayName": "Endurance Modification",
+    "description": "Enhances the Endurance Modification potential of a power by {Boost.Attrib.Endurance.Scale}%.",
+    "shortHelp": "+EndMod",
+    "attribMods": [
+      [
+        {
+          "name": "EndMod",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRecovery",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Endurance",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEndurance",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "EndMod",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRecovery",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Endurance",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEndurance",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "EndMod",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRecovery",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Endurance",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEndurance",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "EndMod",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRecovery",
+          "scale": "0.4375"
+        },
+        {
+          "name": "kEndurance",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEndurance",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_Fear_33",
+    "displayName": "Fear Duration",
+    "description": "Increases fear duration by {Boost.Attrib.Mez.Scale}%.",
+    "shortHelp": "+Fear",
+    "attribMods": [
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAfraid",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kTerrorized",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAfraid",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kTerrorized",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAfraid",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kTerrorized",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAfraid",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kTerrorized",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_Hold_33",
+    "displayName": "Hold Duration",
+    "description": "Increases hold duration by {Boost.Attrib.Mez.Scale}%.",
+    "shortHelp": "+Hold",
+    "attribMods": [
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHeld",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHeld",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHeld",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHeld",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_Immobilize_33",
+    "displayName": "Immobilization Duration",
+    "description": "Increases immobilization duration by {Boost.Attrib.Mez.Scale}%.",
+    "shortHelp": "+Immobilize",
+    "attribMods": [
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kImmobilized",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kImmobilized",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kImmobilized",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kImmobilized",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
     "name": "Boosts_Interrupt_40",
     "displayName": "Interrupt",
     "description": "Reduces interrupt time by {Boost.Attrib.Interrupt.Scale}%.",
@@ -392,6 +640,46 @@
     ]
   },
   {
+    "name": "Boosts_Radius_20",
+    "displayName": "Radius",
+    "description": "Increases radius by {Boost.Attrib.Radius.Scale}%.",
+    "shortHelp": "+Radius",
+    "attribMods": [
+      [
+        {
+          "name": "Radius",
+          "table": "Melee_Boosts_20",
+          "attrib": "kRadius",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Radius",
+          "table": "Melee_Boosts_20",
+          "attrib": "kRadius",
+          "scale": "0.3125"
+        }
+      ],
+      [
+        {
+          "name": "Radius",
+          "table": "Melee_Boosts_20",
+          "attrib": "kRadius",
+          "scale": "0.2500"
+        }
+      ],
+      [
+        {
+          "name": "Radius",
+          "table": "Melee_Boosts_20",
+          "attrib": "kRadius",
+          "scale": "0.21875"
+        }
+      ]
+    ]
+  },
+  {
     "name": "Boosts_Range_20",
     "displayName": "Range",
     "description": "Increases range by {Boost.Attrib.Range.Scale}%.",
@@ -402,7 +690,7 @@
           "name": "Range",
           "table": "Melee_Boosts_20",
           "attrib": "kRange",
-          "scale": "1.000"
+          "scale": "1.0000"
         }
       ],
       [
@@ -442,7 +730,7 @@
           "name": "Recharge",
           "table": "Melee_Boosts_33",
           "attrib": "kRechargeTime",
-          "scale": "1.000"
+          "scale": "1.0000"
         }
       ],
       [
@@ -472,9 +760,173 @@
     ]
   },
   {
+    "name": "Boosts_Sleep_33",
+    "displayName": "Sleep Duration",
+    "description": "Increases sleep duration by {Boost.Attrib.Mez.Scale}%.",
+    "shortHelp": "+Sleep",
+    "attribMods": [
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSleep",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSleep",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSleep",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSleep",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_Stun_33",
+    "displayName": "Stun Duration",
+    "description": "Increases stun duration by {Boost.Attrib.Mez.Scale}%.",
+    "shortHelp": "+Stun",
+    "attribMods": [
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kStunned",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kStunned",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kStunned",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kStunned",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_Taunt_33",
+    "displayName": "Taunt Duration",
+    "description": "Increases taunt duration by {Boost.Attrib.Mez.Scale}%.",
+    "shortHelp": "+Taunt",
+    "attribMods": [
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kTaunt",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kTaunt",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kTaunt",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Mez",
+          "table": "Melee_Boosts_33",
+          "attrib": "kTaunt",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Special_RunSpeed",
+    "displayName": "Increased Run Speed",
+    "description": "Enhances your run speed by {Boost.Attrib.Movement.Scale}%.",
+    "shortHelp": "+Run Speed",
+    "attribMods": [
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Ones",
+          "attrib": "kNull",
+          "scale": "1.0000",
+          "boostTemplate": "kFalse"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Ones",
+          "attrib": "kNull",
+          "scale": "1.0000",
+          "boostTemplate": "kFalse"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Ones",
+          "attrib": "kNull",
+          "scale": "1.0000",
+          "boostTemplate": "kFalse"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Ones",
+          "attrib": "kNull",
+          "scale": "1.0000",
+          "boostTemplate": "kFalse"
+        }
+      ]
+    ]
+  },
+  {
     "name": "Special_FastSnipe",
     "displayName": "Fast Snipe",
-    "description": "All of your snipe powers become instant-cast.",
+    "description": "This enhancement will cause all of your snipe powers to become instant-cast.",
     "shortHelp": "Special",
     "attribMods": [
       [
@@ -482,7 +934,8 @@
           "name": "FastSnipe",
           "table": "Melee_Ones",
           "attrib": "kNull",
-          "scale": "1.000"
+          "scale": "1.0000",
+          "boostTemplate": "kFalse"
         }
       ],
       [
@@ -490,7 +943,8 @@
           "name": "FastSnipe",
           "table": "Melee_Ones",
           "attrib": "kNull",
-          "scale": "1.000"
+          "scale": "1.0000",
+          "boostTemplate": "kFalse"
         }
       ],
       [
@@ -498,7 +952,8 @@
           "name": "FastSnipe",
           "table": "Melee_Ones",
           "attrib": "kNull",
-          "scale": "1.000"
+          "scale": "1.0000",
+          "boostTemplate": "kFalse"
         }
       ],
       [
@@ -506,7 +961,8 @@
           "name": "FastSnipe",
           "table": "Melee_Ones",
           "attrib": "kNull",
-          "scale": "1.000"
+          "scale": "1.0000",
+          "boostTemplate": "kFalse"
         }
       ]
     ]
@@ -603,6 +1059,574 @@
           "attrib": "kPowerchanceMod",
           "scale": "-1",
           "reward": "ReduceIfKD"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Proc_Smashing",
+    "displayName": "Chance for Smashing Damage",
+    "description": "Provides a chance to cause minor smashing damage to your targets. This effect will trigger roughly 3.5 times per minute.",
+    "shortHelp": "Chance for Minor DMG (Smashing)",
+    "attribMods": [
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kSmashing",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Smashing damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Smashing damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kSmashing",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Smashing damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Smashing damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kSmashing",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Smashing damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Smashing damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kSmashing",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Smashing damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Smashing damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kSmashing",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Smashing damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Smashing damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kSmashing",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Smashing damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Smashing damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kSmashing",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Smashing damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Smashing damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kSmashing",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Smashing damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Smashing damage."
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Proc_Lethal",
+    "displayName": "Chance for Lethal Damage",
+    "description": "Provides a chance to cause minor lethal damage to your targets. This effect will trigger roughly 3.5 times per minute.",
+    "shortHelp": "Chance for Minor DMG (Lethal)",
+    "attribMods": [
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kLethal",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Lethal damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Lethal damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kLethal",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Lethal damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Lethal damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kLethal",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Lethal damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Lethal damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kLethal",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Lethal damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Lethal damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kLethal",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Lethal damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Lethal damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kLethal",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Lethal damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Lethal damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kLethal",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Lethal damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Lethal damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kLethal",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Lethal damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Lethal damage."
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Proc_Fire",
+    "displayName": "Chance for Fire Damage",
+    "description": "Provides a chance to cause minor fire damage to your targets. This effect will trigger roughly 3.5 times per minute.",
+    "shortHelp": "Chance for Minor DMG (Fire)",
+    "attribMods": [
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kFire",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Fire damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Fire damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kFire",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Fire damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Fire damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kFire",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Fire damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Fire damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kFire",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Fire damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Fire damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kFire",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Fire damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Fire damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kFire",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Fire damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Fire damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kFire",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Fire damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Fire damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kFire",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Fire damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Fire damage."
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Proc_HealSelf",
+    "displayName": "Chance to Heal Self",
+    "description": "Gives a chance to Heal yourself 5% of your max life. This effect will trigger roughly 3 times per minute.",
+    "shortHelp": "Chance to Heal Self",
+    "attribMods": [
+      [
+        {
+          "name": "Heal",
+          "table": "Melee_HealSelf",
+          "aspect": "kAbs",
+          "attrib": "kHeal",
+          "target": "kSelf",
+          "scale": "0.5000",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kIgnore",
+          "requires": "enttype source> player eq",
+          "procsPerMinute": "3",
+          "allowCombatMods": "kFalse",
+          "displayAttackerHit": "You heal {PlayerDest} {Damage} points of damage."
+        }
+      ],
+      [
+        {
+          "name": "Heal",
+          "table": "Melee_HealSelf",
+          "aspect": "kAbs",
+          "attrib": "kHeal",
+          "target": "kSelf",
+          "scale": "0.5000",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kIgnore",
+          "requires": "enttype source> player eq",
+          "procsPerMinute": "3",
+          "allowCombatMods": "kFalse",
+          "displayAttackerHit": "You heal {PlayerDest} {Damage} points of damage."
+        }
+      ],
+      [
+        {
+          "name": "Heal",
+          "table": "Melee_HealSelf",
+          "aspect": "kAbs",
+          "attrib": "kHeal",
+          "target": "kSelf",
+          "scale": "0.5000",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kIgnore",
+          "requires": "enttype source> player eq",
+          "procsPerMinute": "3",
+          "allowCombatMods": "kFalse",
+          "displayAttackerHit": "You heal {PlayerDest} {Damage} points of damage."
+        }
+      ],
+      [
+        {
+          "name": "Heal",
+          "table": "Melee_HealSelf",
+          "aspect": "kAbs",
+          "attrib": "kHeal",
+          "target": "kSelf",
+          "scale": "0.5000",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kIgnore",
+          "requires": "enttype source> player eq",
+          "procsPerMinute": "3",
+          "allowCombatMods": "kFalse",
+          "displayAttackerHit": "You heal {PlayerDest} {Damage} points of damage."
         }
       ]
     ]

@@ -73,6 +73,7 @@ namespace Inventor.Properties {
         /// <summary>
         ///   Looks up a localized string similar to [
         ///  {
+        ///    &quot;name&quot;: &quot;Boosts_Accuracy_33&quot;,
         ///    &quot;displayName&quot;: &quot;Accuracy&quot;,
         ///    &quot;description&quot;: &quot;Enhances accuracy by {Boost.Attrib.Accuracy.Scale}%.&quot;,
         ///    &quot;shortHelp&quot;: &quot;+ACC&quot;,
@@ -90,10 +91,7 @@ namespace Inventor.Properties {
         ///          &quot;name&quot;: &quot;Accuracy&quot;,
         ///          &quot;table&quot;: &quot;Melee_Boosts_33&quot;,
         ///          &quot;attrib&quot;: &quot;kAccuracy&quot;,
-        ///          &quot;scale&quot;: &quot;0.6250&quot;
-        ///        }
-        ///      ],
-        ///  [rest of string was truncated]&quot;;.
+        ///          &quot;scale [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string BoostTypes {
             get {
@@ -410,35 +408,57 @@ namespace Inventor.Properties {
         /// <summary>
         ///   Looks up a localized string similar to [
         ///  {
-        ///    &quot;name&quot;: &quot;S_AlchemicalGold&quot;,
-        ///    &quot;displayName&quot;: &quot;Alchemical Gold&quot;,
-        ///    &quot;type&quot;: 0,
-        ///    &quot;rarity&quot;: 1,
-        ///    &quot;level&quot;: 1
-        ///  },
-        ///  {
         ///    &quot;name&quot;: &quot;S_AlchemicalSilver&quot;,
         ///    &quot;displayName&quot;: &quot;Alchemical Silver&quot;,
-        ///    &quot;type&quot;: 0,
+        ///    &quot;origin&quot;: 0,
         ///    &quot;rarity&quot;: 0,
         ///    &quot;level&quot;: 1
         ///  },
         ///  {
-        ///    &quot;name&quot;: &quot;S_AlienBloodSample&quot;,
-        ///    &quot;displayName&quot;: &quot;Alien Blood Sample&quot;,
-        ///    &quot;type&quot;: 1,
-        ///    &quot;rarity&quot;: 2,
+        ///    &quot;name&quot;: &quot;S_AncientArtifact&quot;,
+        ///    &quot;displayName&quot;: &quot;Ancient Artifact&quot;,
+        ///    &quot;origin&quot;: 0,
+        ///    &quot;rarity&quot;: 0,
         ///    &quot;level&quot;: 0
         ///  },
         ///  {
-        ///    &quot;name&quot;: &quot;S_AncientArtifact&quot;,
-        ///    &quot;displayName&quot;: &quot;Ancient Artifact&quot;,
-        ///    &quot;type&quot;: 0,
-        ///    &quot;r [rest of string was truncated]&quot;;.
+        ///    &quot;name&quot;: &quot;S_AncientBone&quot;,
+        ///    &quot;displayName&quot;: &quot;Ancient Bone&quot;,
+        ///    &quot;origin&quot;: 0,
+        ///    &quot;rarity&quot;: 0,
+        ///    &quot;level&quot;: 1
+        ///  },
+        ///  {
+        ///    &quot;name&quot;: &quot;S_Boresight&quot;,
+        ///    &quot;displayName&quot;: &quot;Boresight&quot;,
+        ///    &quot;origin&quot;: 1,
+        ///    &quot;rarity&quot;: 0,
+        ///   [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Salvage {
             get {
                 return ResourceManager.GetString("Salvage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [
+        ///  {
+        ///    &quot;FullName&quot;: &quot;Set_Bonus.PVP_Set_Bonus.Mez_Resist_1&quot;,
+        ///    &quot;DisplayName&quot;: &quot;Tiny Status Resistance Bonus (PVP)&quot;,
+        ///    &quot;DisplayHelp&quot;: &quot;Reduces the duration of status effects on you by 2.5%. (PVP)&quot;,
+        ///    &quot;DisplayShortHelp&quot;: &quot;+RES Status Effects&quot;
+        ///  },
+        ///  {
+        ///    &quot;FullName&quot;: &quot;Set_Bonus.PVP_Set_Bonus.Mez_Resist_2&quot;,
+        ///    &quot;DisplayName&quot;: &quot;Large Status Resistance Bonus (PVP)&quot;,
+        ///    &quot;DisplayHelp&quot;: &quot;Reduces the duration of status effects on you by 5%. (PVP)&quot;,
+        ///    &quot;DisplayShortHelp&quot;: &quot;+RES Status Effects&quot;
+        ///   [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string SetBonus {
+            get {
+                return ResourceManager.GetString("SetBonus", resourceCulture);
             }
         }
         

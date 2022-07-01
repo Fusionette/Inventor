@@ -17,7 +17,9 @@ namespace Inventor
 		List<SetGroup> setGroups;
 		List<BoostType> boostTypes;
 		List<Salvage> salvage;
+        List<SetBonus> setBonusData;
 		List<int> craftingCost;
+        List<string> boostCategories = new List<string>();
 
 		public Form1()
 		{
@@ -26,10 +28,13 @@ namespace Inventor
 			setGroups = JsonConvert.DeserializeObject<List<SetGroup>>(LoadConfig("SetGroups", Properties.Resources.SetGroups));
 			boostTypes = JsonConvert.DeserializeObject<List<BoostType>>(LoadConfig("BoostTypes", Properties.Resources.BoostTypes));
 			salvage = JsonConvert.DeserializeObject<List<Salvage>>(LoadConfig("Salvage", Properties.Resources.Salvage));
-			craftingCost = JsonConvert.DeserializeObject<List<int>>(LoadConfig("CraftingCost", Properties.Resources.CraftingCost));
-			foreach (SetGroup group in setGroups) setGroupName.Items.Add(group);
-			foreach (BoostType boostType in boostTypes) boostTypeList.Items.Add(boostType);
-			this.Icon = Icon.FromHandle(boostSet.GetIcon(config, "Superior").GetHicon());
+            setBonusData = JsonConvert.DeserializeObject<List<SetBonus>>(LoadConfig("SetBonus", Properties.Resources.SetBonus));
+            craftingCost = JsonConvert.DeserializeObject<List<int>>(LoadConfig("CraftingCost", Properties.Resources.CraftingCost));
+            foreach (SetGroup group in setGroups) setGroupName.Items.Add(group);
+            foreach (BoostType boostType in boostTypes) boostTypeList.Items.Add(boostType);
+            setBonusList.DisplayMember = "displayList";
+            setBonusList.DataSource = setBonusData;
+            this.Icon = Icon.FromHandle(boostSet.GetIcon(config, "Superior").GetHicon());
 		}
 
 		private string LoadConfig(string filename, string resource)
@@ -53,7 +58,8 @@ namespace Inventor
 		private void SaveBoostset(string filename)
 		{
 			UpdateBoostSet();
-			File.WriteAllText(filename, JsonConvert.SerializeObject(boostSet));
+			File.WriteAllText(filename, JsonConvert.SerializeObject(boostSet, Formatting.Indented,
+                new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore }));
 		}
 
 		private void UpdateFormData()
@@ -120,7 +126,8 @@ namespace Inventor
 
 		private void createDataFiles_Click(object sender, EventArgs e)
 		{
-			UpdateBoostSet();
+            createDataFiles.Enabled = false;
+            UpdateBoostSet();
 			Directory.CreateDirectory(config.data + "Defs/Account");
 			Directory.CreateDirectory(config.data + "Defs/Boostsets");
 			Directory.CreateDirectory(config.data + "Defs/Powers");
@@ -129,20 +136,54 @@ namespace Inventor
 			Directory.CreateDirectory(config.data + "Texts/English/Boostset");
 			Directory.CreateDirectory(config.data + "Texts/English/Powers");
 
-			File.WriteAllText(config.data + "Defs/Account/Product_Catalog.def", boostSet.GetProductCatalog());
-			File.WriteAllText(config.data + "Defs/Invention/Recipes.recipe", boostSet.GetDropRecipe(craftingCost, salvage));
-			File.WriteAllText(config.data + "Defs/Invention/Merits.recipe", boostSet.GetMeritsRecipe());
-			File.WriteAllText(config.data + "Defs/Invention/Store.recipe", boostSet.GetStoreRecipe());
-			File.WriteAllText(config.data + "texts/English/Bases/Recipes.ms", boostSet.DumpCache());
+            boostSet.catalog.AddFile(config.data + "Defs/Account/Product_Catalog.def");
+            File.WriteAllText(config.data + "Defs/Account/Product_Catalog.def", boostSet.GetProductCatalog());
 
+            boostSet.pstring.AddFile(config.data + "texts/English/Bases/Recipes.ms");
+
+            boostSet.recipes.AddFile(config.data + "Defs/Invention/Recipes.recipe");
+            File.WriteAllText(config.data + "Defs/Invention/Recipes.recipe", boostSet.GetDropRecipe(craftingCost, salvage));
+            boostSet.recipes.AddFile(config.data + "Defs/Invention/Merits.recipe");
+            File.WriteAllText(config.data + "Defs/Invention/Merits.recipe", boostSet.GetMeritsRecipe());
+            boostSet.recipes.AddFile(config.data + "Defs/Invention/Store.recipe");
+            File.WriteAllText(config.data + "Defs/Invention/Store.recipe", boostSet.GetStoreRecipe());
+
+            File.WriteAllText(config.data + "texts/English/Bases/Recipes.ms", boostSet.pstring.ToString());
+
+            boostSet.pstring.AddFile(config.data + "Texts/English/Boostset/Boostsets.ms");
+            boostSet.boostsets.AddFile(config.data + "Defs/Boostsets/Boostsets.def");
 			File.WriteAllText(config.data + "Defs/Boostsets/Boostsets.def", boostSet.GetBoostSetDef());
-			File.WriteAllText(config.data + "Texts/English/Boostset/Boostsets.ms", boostSet.DumpCache());
+			File.WriteAllText(config.data + "Texts/English/Boostset/Boostsets.ms", boostSet.pstring.ToString());
 
-			File.WriteAllText(config.data + "Defs/Powers/Boosts.categories", boostSet.GetBoostsCategories());
-			File.WriteAllText(config.data + "Defs/Powers/Boosts.powersets", boostSet.GetBoostsPowerSets());
-			foreach (Boost boost in boostSet.boostList) File.WriteAllText(config.data + "Defs/Powers/Boosts_Crafted_" + boost.name + ".powers", boostSet.GetPowers(boost, false, "Crafted_", "Attuned_"));
-			foreach (Boost boost in boostSet.boostList) File.WriteAllText(config.data + "Defs/Powers/Boosts_Attuned_" + boost.name + ".powers", boostSet.GetPowers(boost, true, "Attuned_", null));
-			File.WriteAllText(config.data + "Texts/English/Powers/Boosts." + boostSet.name + ".ms", boostSet.DumpCache());
+            boostCategories.Clear();
+            if (File.Exists(config.data + "Defs/Powers/Boosts.categories"))
+            {
+                string line;
+                StreamReader file = new StreamReader(config.data + "Defs/Powers/Boosts.categories");
+                while ((line = file.ReadLine()) != null)
+                {
+                    line = line.Trim();
+                    if (line.ToUpper().IndexOf("POWERSETS ") == 0)
+                    {
+                        boostCategories.Add(line.Substring(10).Trim());
+                    }
+                }
+
+                file.Close();
+            }
+            File.WriteAllText(config.data + "Defs/Powers/Boosts.categories", boostSet.GetBoostsCategories(boostCategories));
+
+            foreach (Boost boost in boostSet.boostList)
+            {
+                Directory.CreateDirectory(config.data + "Defs/Powers/Boosts/Crafted_" + boost.name);
+                File.WriteAllText(config.data + "Defs/Powers/Boosts/Crafted_" + boost.name + ".powersets", boostSet.GetBoostsPowerSet(boost, "Crafted_"));
+                File.WriteAllText(config.data + "Defs/Powers/Boosts/Crafted_" + boost.name + "/Crafted_" + boost.name + ".powers", boostSet.GetPowers(boost, false, "Crafted_", "Attuned_"));
+                Directory.CreateDirectory(config.data + "Defs/Powers/Boosts/Attuned_" + boost.name);
+                File.WriteAllText(config.data + "Defs/Powers/Boosts/Attuned_" + boost.name + ".powersets", boostSet.GetBoostsPowerSet(boost, "Attuned_"));
+                File.WriteAllText(config.data + "Defs/Powers/Boosts/Attuned_" + boost.name + "/Attuned_" + boost.name + ".powers", boostSet.GetPowers(boost, true, "Attuned_", null));
+            }
+
+            File.WriteAllText(config.data + "Texts/English/Powers/Boosts." + boostSet.name + ".ms", boostSet.pstring.ToString());
 
 			if (File.Exists(config.images + boostSet.iconName + ".png"))
 			{
@@ -192,9 +233,10 @@ namespace Inventor
 				File.WriteAllText(config.thumbs + "enhancements_images.txt", enhancementsList);
 				File.WriteAllText(config.thumbs + "recipes_images.txt", recipesList);
 			}
-		}
+            createDataFiles.Enabled = true;
+        }
 
-		private void bonusAddNew_Click(object sender, EventArgs e)
+        private void bonusAddNew_Click(object sender, EventArgs e)
 		{
 			Bonus bonus = new Bonus();
 			if (!string.IsNullOrEmpty(bonusAutoPowers.Text))
@@ -486,5 +528,12 @@ namespace Inventor
 				AddSalvageToTree(s, salvageTree.Nodes[(int)s.level]);
 			}
 		}
-	}
+
+        private void setBonusList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SetBonus selected = (SetBonus)setBonusList.SelectedItem;
+            setBonusLabel.Text = selected.displayShortHelp + Environment.NewLine + selected.displayHelp;
+            bonusAutoPowers.Text = selected.fullName;
+        }
+    }
 }

@@ -87,6 +87,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.recipeTabName = new System.Windows.Forms.TextBox();
             this.tabBonus = new System.Windows.Forms.TabPage();
+            this.setBonusList = new System.Windows.Forms.ListBox();
             this.bonusAddNew = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.bonusRequires = new System.Windows.Forms.TextBox();
@@ -96,6 +97,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.bonusMinBoosts = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
+            this.setBonusLabel = new System.Windows.Forms.Label();
             this.tabs.SuspendLayout();
             this.tabSet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slotMinLevel)).BeginInit();
@@ -734,6 +736,8 @@
             // 
             // tabBonus
             // 
+            this.tabBonus.Controls.Add(this.setBonusLabel);
+            this.tabBonus.Controls.Add(this.setBonusList);
             this.tabBonus.Controls.Add(this.bonusAddNew);
             this.tabBonus.Controls.Add(this.label13);
             this.tabBonus.Controls.Add(this.bonusRequires);
@@ -749,6 +753,15 @@
             this.tabBonus.TabIndex = 2;
             this.tabBonus.Text = "Set Bonus";
             this.tabBonus.UseVisualStyleBackColor = true;
+            // 
+            // setBonusList
+            // 
+            this.setBonusList.FormattingEnabled = true;
+            this.setBonusList.Location = new System.Drawing.Point(120, 117);
+            this.setBonusList.Name = "setBonusList";
+            this.setBonusList.Size = new System.Drawing.Size(319, 238);
+            this.setBonusList.TabIndex = 8;
+            this.setBonusList.SelectedIndexChanged += new System.EventHandler(this.setBonusList_SelectedIndexChanged);
             // 
             // bonusAddNew
             // 
@@ -845,6 +858,13 @@
             this.label10.Size = new System.Drawing.Size(86, 13);
             this.label10.TabIndex = 0;
             this.label10.Text = "Minimum Boosts:";
+            // 
+            // setBonusLabel
+            // 
+            this.setBonusLabel.Location = new System.Drawing.Point(120, 358);
+            this.setBonusLabel.Name = "setBonusLabel";
+            this.setBonusLabel.Size = new System.Drawing.Size(319, 47);
+            this.setBonusLabel.TabIndex = 9;
             // 
             // Form1
             // 
@@ -943,6 +963,8 @@
 		private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox boostSlotRequires;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.ListBox setBonusList;
+        private System.Windows.Forms.Label setBonusLabel;
     }
 }
 
