@@ -2,7 +2,7 @@
   {
     "name": "Boosts_Accuracy_33",
     "displayName": "Accuracy",
-    "description": "Enhances accuracy by {Boost.Attrib.Accuracy.Scale}%.",
+    "description": "Increases accuracy by {Boost.Attrib.Accuracy.Scale}%.",
     "shortHelp": "+ACC",
     "attribMods": [
       [
@@ -288,6 +288,470 @@
     ]
   },
   {
+    "name": "Boosts_Defense_20",
+    "displayName": "Defense",
+    "description": "Increases defense buffs by {Boost.Attrib.Defense.Scale}%.",
+    "shortHelp": "+Def",
+    "attribMods": [
+      [
+        {
+          "name": "Defense",
+          "table": "Melee_Boosts_20",
+          "attrib": "kSmashing",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kLethal",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kFire",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kCold",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kEnergy",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kNegative_Energy",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kToxic",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kPsionic",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kBase_Defense",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Defense",
+          "table": "Melee_Boosts_20",
+          "attrib": "kSmashing",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kLethal",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kFire",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kCold",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kEnergy",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kNegative_Energy",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_33",
+          "attrib": "kToxic",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kPsionic",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kBase_Defense",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Defense",
+          "table": "Melee_Boosts_20",
+          "attrib": "kSmashing",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kLethal",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kFire",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kCold",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kEnergy",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kNegative_Energy",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kToxic",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kPsionic",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kBase_Defense",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Defense",
+          "table": "Melee_Boosts_20",
+          "attrib": "kSmashing",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kLethal",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kFire",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kCold",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kEnergy",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kNegative_Energy",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kToxic",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kPsionic",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_20",
+          "table": "Melee_Boosts_20",
+          "attrib": "kBase_Defense",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_Defense_Debuff_33",
+    "displayName": "Defense Debuff",
+    "description": "Increases defense debuffs by {Boost.Attrib.Defense.Scale}%.",
+    "shortHelp": "+Defense Debuff",
+    "attribMods": [
+      [
+        {
+          "name": "Defense",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSmashing",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kLethal",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kFire",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kCold",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnergy",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kNegative_Energy",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kToxic",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kPsionic",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kBase_Defense",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Defense",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSmashing",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kLethal",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kFire",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kCold",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnergy",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kNegative_Energy",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kToxic",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kPsionic",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kBase_Defense",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Defense",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSmashing",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kLethal",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kFire",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kCold",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnergy",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kNegative_Energy",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kToxic",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kPsionic",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kBase_Defense",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Defense",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSmashing",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kLethal",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kFire",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kCold",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kEnergy",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kNegative_Energy",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kToxic",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kPsionic",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Boosts_33",
+          "table": "Melee_Boosts_33",
+          "attrib": "kBase_Defense",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
     "name": "Boosts_EnduranceDiscount_33",
     "displayName": "Endurance",
     "description": "Reduces endurance cost by {Boost.Attrib.Endurance.Scale}%.",
@@ -383,7 +847,7 @@
           "scale": "0.4375"
         },
         {
-          "name": "kEndurance",
+          "name": "Endurance",
           "table": "Melee_Boosts_33",
           "attrib": "kEndurance",
           "scale": "0.4375"
@@ -450,6 +914,158 @@
           "name": "Mez",
           "table": "Melee_Boosts_33",
           "attrib": "kTerrorized",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_Fly_33",
+    "displayName": "Flying Speed",
+    "description": "Increases flight speed by {Boost.Attrib.Movement.Scale}%.",
+    "shortHelp": "+Fly Speed",
+    "attribMods": [
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedFlying",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedFlying",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedFlying",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedFlying",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_Heal_33",
+    "displayName": "Healing/Absorb",
+    "description": "Increases healing, hit point buffs, and damage absorption by {Boost.Attrib.Heal.Scale}%.",
+    "shortHelp": "+Heal",
+    "attribMods": [
+      [
+        {
+          "name": "Heal",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHeal_Dmg",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Absorb",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAbsorb",
+          "scale": "1.0000"
+        },
+        {
+          "name": "HitPoints",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHitPoints",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Regeneration",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRegeneration",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Heal",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHeal_Dmg",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Absorb",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAbsorb",
+          "scale": "0.6250"
+        },
+        {
+          "name": "HitPoints",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHitPoints",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Regeneration",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRegeneration",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Heal",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHeal_Dmg",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Absorb",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAbsorb",
+          "scale": "0.5000"
+        },
+        {
+          "name": "HitPoints",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHitPoints",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Regeneration",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRegeneration",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Heal",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHeal_Dmg",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Absorb",
+          "table": "Melee_Boosts_33",
+          "attrib": "kAbsorb",
+          "scale": "0.4375"
+        },
+        {
+          "name": "HitPoints",
+          "table": "Melee_Boosts_33",
+          "attrib": "kHitPoints",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Regeneration",
+          "table": "Melee_Boosts_33",
+          "attrib": "kRegeneration",
           "scale": "0.4375"
         }
       ]
@@ -570,6 +1186,70 @@
           "name": "Interrupt",
           "table": "Melee_Boosts_40",
           "attrib": "kInterruptTime",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_Jump_33",
+    "displayName": "Jumping Speed",
+    "description": "Increases jump height and speed by {Boost.Attrib.Movement.Scale}%.",
+    "shortHelp": "+Jump",
+    "attribMods": [
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedJumping",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Height",
+          "table": "Melee_Boosts_33",
+          "attrib": "kJumpHeight",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedJumping",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Height",
+          "table": "Melee_Boosts_33",
+          "attrib": "kJumpHeight",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedJumping",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Height",
+          "table": "Melee_Boosts_33",
+          "attrib": "kJumpHeight",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedJumping",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Height",
+          "table": "Melee_Boosts_33",
+          "attrib": "kJumpHeight",
           "scale": "0.4375"
         }
       ]
@@ -722,12 +1402,12 @@
   {
     "name": "Boosts_RechargeTime_33",
     "displayName": "Recharge",
-    "description": "Increases recharge rate by {Boost.Attrib.Recharge.Scale}%.",
+    "description": "Increases recharge rate by {Boost.Attrib.RechargeTime.Scale}%.",
     "shortHelp": "+Rech",
     "attribMods": [
       [
         {
-          "name": "Recharge",
+          "name": "RechargeTime",
           "table": "Melee_Boosts_33",
           "attrib": "kRechargeTime",
           "scale": "1.0000"
@@ -735,7 +1415,7 @@
       ],
       [
         {
-          "name": "Recharge",
+          "name": "RechargeTime",
           "table": "Melee_Boosts_33",
           "attrib": "kRechargeTime",
           "scale": "0.6250"
@@ -743,7 +1423,7 @@
       ],
       [
         {
-          "name": "Recharge",
+          "name": "RechargeTime",
           "table": "Melee_Boosts_33",
           "attrib": "kRechargeTime",
           "scale": "0.5000"
@@ -751,9 +1431,49 @@
       ],
       [
         {
-          "name": "Recharge",
+          "name": "RechargeTime",
           "table": "Melee_Boosts_33",
           "attrib": "kRechargeTime",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_Run_33",
+    "displayName": "Running Speed",
+    "description": "Increases run speed by {Boost.Attrib.Movement.Scale}%.",
+    "shortHelp": "+Run Speed",
+    "attribMods": [
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedRunning",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedRunning",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedRunning",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedRunning",
           "scale": "0.4375"
         }
       ]
@@ -794,6 +1514,94 @@
           "name": "Mez",
           "table": "Melee_Boosts_33",
           "attrib": "kSleep",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_Slow_33",
+    "displayName": "Slow",
+    "description": "Increases slows by {Boost.Attrib.Movement.Scale}%.",
+    "shortHelp": "+Slow",
+    "attribMods": [
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedRunning",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Jump",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedJumping",
+          "scale": "1.0000"
+        },
+        {
+          "name": "Fly",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedFlying",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedRunning",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Jump",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedJumping",
+          "scale": "0.6250"
+        },
+        {
+          "name": "Fly",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedFlying",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedRunning",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Jump",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedJumping",
+          "scale": "0.5000"
+        },
+        {
+          "name": "Fly",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedFlying",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "Movement",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedRunning",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Jump",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedJumping",
+          "scale": "0.4375"
+        },
+        {
+          "name": "Fly",
+          "table": "Melee_Boosts_33",
+          "attrib": "kSpeedFlying",
           "scale": "0.4375"
         }
       ]
@@ -875,6 +1683,410 @@
           "table": "Melee_Boosts_33",
           "attrib": "kTaunt",
           "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_ToHit_20",
+    "displayName": "ToHit Buff",
+    "description": "Increases to hit buffs by {Boost.Attrib.ToHit.Scale}%.",
+    "shortHelp": "+ToHit",
+    "attribMods": [
+      [
+        {
+          "name": "ToHit",
+          "table": "Melee_Boosts_20",
+          "attrib": "kToHit",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "ToHit",
+          "table": "Melee_Boosts_20",
+          "attrib": "kToHit",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "ToHit",
+          "table": "Melee_Boosts_20",
+          "attrib": "kToHit",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "ToHit",
+          "table": "Melee_Boosts_20",
+          "attrib": "kToHit",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Boosts_ToHit_DeBuff_20",
+    "displayName": "ToHit DeBuff",
+    "description": "Increases to hit debuffs by {Boost.Attrib.ToHit.Scale}%.",
+    "shortHelp": "+ToHit",
+    "attribMods": [
+      [
+        {
+          "name": "ToHit",
+          "table": "Melee_Boosts_20",
+          "attrib": "kToHit",
+          "scale": "1.0000"
+        }
+      ],
+      [
+        {
+          "name": "ToHit",
+          "table": "Melee_Boosts_20",
+          "attrib": "kToHit",
+          "scale": "0.6250"
+        }
+      ],
+      [
+        {
+          "name": "ToHit",
+          "table": "Melee_Boosts_20",
+          "attrib": "kToHit",
+          "scale": "0.5000"
+        }
+      ],
+      [
+        {
+          "name": "ToHit",
+          "table": "Melee_Boosts_20",
+          "attrib": "kToHit",
+          "scale": "0.4375"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Special_Hypersonic",
+    "displayName": "Increased Fly Magnitude",
+    "description": "Increases your Fly magnitude.",
+    "shortHelp": "+Fly",
+    "attribMods": [
+      [
+        {
+          "name": "Fly",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kFly",
+          "target": "kSelf",
+          "scale": "2.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "Fly",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kFly",
+          "target": "kSelf",
+          "scale": "2.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "Fly",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kFly",
+          "target": "kSelf",
+          "scale": "2.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "Fly",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kFly",
+          "target": "kSelf",
+          "scale": "2.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Special_Launch",
+    "displayName": "Increased Jump Height",
+    "description": "Increases both your maximum Jump Height and your power's Jump Height.",
+    "shortHelp": "+Jump Height",
+    "attribMods": [
+      [
+        {
+          "name": "JumpHeight",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kJumpHeight",
+          "target": "kSelf",
+          "scale": "2.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        },
+        {
+          "name": "MaxJumpHeight",
+          "table": "Melee_Ones",
+          "aspect": "kMax",
+          "attrib": "kJumpHeight",
+          "target": "kSelf",
+          "scale": "10.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "JumpHeight",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kJumpHeight",
+          "target": "kSelf",
+          "scale": "2.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        },
+        {
+          "name": "MaxJumpHeight",
+          "table": "Melee_Ones",
+          "aspect": "kMax",
+          "attrib": "kJumpHeight",
+          "target": "kSelf",
+          "scale": "10.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "JumpHeight",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kJumpHeight",
+          "target": "kSelf",
+          "scale": "2.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        },
+        {
+          "name": "MaxJumpHeight",
+          "table": "Melee_Ones",
+          "aspect": "kMax",
+          "attrib": "kJumpHeight",
+          "target": "kSelf",
+          "scale": "10.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "JumpHeight",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kJumpHeight",
+          "target": "kSelf",
+          "scale": "2.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        },
+        {
+          "name": "MaxJumpHeight",
+          "table": "Melee_Ones",
+          "aspect": "kMax",
+          "attrib": "kJumpHeight",
+          "target": "kSelf",
+          "scale": "10.000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Special_Thrust",
+    "displayName": "Increased Run Speed Resistance",
+    "description": "Increases your resistance to Run Speed debuffs by 20%.",
+    "shortHelp": "+Res(Run Speed)",
+    "attribMods": [
+      [
+        {
+          "name": "ResistRunSpeed",
+          "table": "Melee_Ones",
+          "aspect": "kRes",
+          "attrib": "kSpeedRunning",
+          "target": "kSelf",
+          "scale": "0.2000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "ResistRunSpeed",
+          "table": "Melee_Ones",
+          "aspect": "kRes",
+          "attrib": "kSpeedRunning",
+          "target": "kSelf",
+          "scale": "0.2000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "ResistRunSpeed",
+          "table": "Melee_Ones",
+          "aspect": "kRes",
+          "attrib": "kSpeedRunning",
+          "target": "kSelf",
+          "scale": "0.2000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "ResistRunSpeed",
+          "table": "Melee_Ones",
+          "aspect": "kRes",
+          "attrib": "kSpeedRunning",
+          "target": "kSelf",
+          "scale": "0.2000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Special_Warp",
+    "displayName": "Increased Perception",
+    "description": "Increases your Perception by 20%.",
+    "shortHelp": "+Perception",
+    "attribMods": [
+      [
+        {
+          "name": "Perception",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kPerceptionRadius",
+          "target": "kSelf",
+          "scale": "0.2000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "Perception",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kPerceptionRadius",
+          "target": "kSelf",
+          "scale": "0.2000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "Perception",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kPerceptionRadius",
+          "target": "kSelf",
+          "scale": "0.2000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
+        }
+      ],
+      [
+        {
+          "name": "Perception",
+          "table": "Melee_Ones",
+          "aspect": "kCur",
+          "attrib": "kPerceptionRadius",
+          "target": "kSelf",
+          "scale": "0.2000",
+          "allowResistance": "kFalse",
+          "duration": "120",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kReplace"
         }
       ]
     ]
@@ -1544,6 +2756,166 @@
     ]
   },
   {
+    "name": "Proc_Cold",
+    "displayName": "Chance for Cold Damage",
+    "description": "Provides a chance to cause minor cold damage to your targets. This effect will trigger roughly 3.5 times per minute.",
+    "shortHelp": "Chance for Minor DMG (Cold)",
+    "attribMods": [
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kCold",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Cold damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Cold damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kCold",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Cold damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Cold damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kCold",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Cold damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Cold damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kCold",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Cold damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Cold damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kCold",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Cold damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Cold damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kCold",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Cold damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Cold damage."
+        }
+      ],
+      [
+        {
+          "name": "Damage",
+          "table": "Melee_TempDamage",
+          "attrib": "kCold",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Cold damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Cold damage."
+        },
+        {
+          "name": "TempDamage",
+          "table": "Melee_TempDamage",
+          "attrib": "kCold",
+          "scale": "0.6700",
+          "aspect": "kAbs",
+          "target": "kTarget",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "3.5",
+          "displayAttackerHit": "You hit {PlayerDest} with your {PowerName} for {Damage} points of Cold damage.",
+          "displayVictimHit": "{PlayerSource} hits you with their {PowerName} for {Damage} points of Cold damage."
+        }
+      ]
+    ]
+  },
+  {
     "name": "Proc_HealSelf",
     "displayName": "Chance to Heal Self",
     "description": "Gives a chance to Heal yourself 5% of your max life. This effect will trigger roughly 3 times per minute.",
@@ -1627,6 +2999,510 @@
           "procsPerMinute": "3",
           "allowCombatMods": "kFalse",
           "displayAttackerHit": "You heal {PlayerDest} {Damage} points of damage."
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Proc_Stun",
+    "displayName": "Chance for Stun",
+    "description": "Gives a small chance to stun your target. This effect will trigger roughly 2.5 times per minute.",
+    "shortHelp": "Chance for +2 Stun",
+    "attribMods": [
+      [
+        {
+          "name": "Stun",
+          "table": "Melee_Ones",
+          "attrib": "kStun",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Stun {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Stuns you with their {PowerName}."
+        },
+        {
+          "name": "Stun",
+          "table": "Melee_PvPMez",
+          "attrib": "kStun",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Stun {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Stuns you with their {PowerName}."
+        }
+      ],
+      [
+        {
+          "name": "Stun",
+          "table": "Melee_Ones",
+          "attrib": "kStun",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Stun {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Stuns you with their {PowerName}."
+        },
+        {
+          "name": "Stun",
+          "table": "Melee_PvPMez",
+          "attrib": "kStun",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Stun {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Stuns you with their {PowerName}."
+        }
+      ],
+      [
+        {
+          "name": "Stun",
+          "table": "Melee_Ones",
+          "attrib": "kStun",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Stun {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Stuns you with their {PowerName}."
+        },
+        {
+          "name": "Stun",
+          "table": "Melee_PvPMez",
+          "attrib": "kStun",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Stun {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Stuns you with their {PowerName}."
+        }
+      ],
+      [
+        {
+          "name": "Stun",
+          "table": "Melee_Ones",
+          "attrib": "kStun",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Stun {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Stuns you with their {PowerName}."
+        },
+        {
+          "name": "Stun",
+          "table": "Melee_PvPMez",
+          "attrib": "kStun",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Stun {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Stuns you with their {PowerName}."
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Proc_Sleep",
+    "displayName": "Chance for Sleep",
+    "description": "Gives a small chance to sleep your target. This effect will trigger roughly 2.5 times per minute.",
+    "shortHelp": "Chance for +2 Sleep",
+    "attribMods": [
+      [
+        {
+          "name": "Sleep",
+          "table": "Melee_Ones",
+          "attrib": "kSleep",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Sleep {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Sleeps you with their {PowerName}."
+        },
+        {
+          "name": "Sleep",
+          "table": "Melee_PvPMez",
+          "attrib": "kSleep",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Sleep {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Sleeps you with their {PowerName}."
+        }
+      ],
+      [
+        {
+          "name": "Sleep",
+          "table": "Melee_Ones",
+          "attrib": "kSleep",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Sleep {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Sleeps you with their {PowerName}."
+        },
+        {
+          "name": "Sleep",
+          "table": "Melee_PvPMez",
+          "attrib": "kSleep",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Sleep {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Sleeps you with their {PowerName}."
+        }
+      ],
+      [
+        {
+          "name": "Sleep",
+          "table": "Melee_Ones",
+          "attrib": "kSleep",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Sleep {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Sleeps you with their {PowerName}."
+        },
+        {
+          "name": "Sleep",
+          "table": "Melee_PvPMez",
+          "attrib": "kSleep",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Sleep {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Sleeps you with their {PowerName}."
+        }
+      ],
+      [
+        {
+          "name": "Sleep",
+          "table": "Melee_Ones",
+          "attrib": "kSleep",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Sleep {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Sleeps you with their {PowerName}."
+        },
+        {
+          "name": "Sleep",
+          "table": "Melee_PvPMez",
+          "attrib": "kSleep",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Sleep {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Sleeps you with their {PowerName}."
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Proc_Immobilize",
+    "displayName": "Chance for Immobilize",
+    "description": "Gives a small chance to immobilize your target. This effect will trigger roughly 2.5 times per minute.",
+    "shortHelp": "Chance for +2 Immobilize",
+    "attribMods": [
+      [
+        {
+          "name": "Immobilize",
+          "table": "Melee_Ones",
+          "attrib": "kImmobilize",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Immobilize {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Immobilizes you with their {PowerName}."
+        },
+        {
+          "name": "Immobilize",
+          "table": "Melee_PvPMez",
+          "attrib": "kImmobilize",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Immobilize {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Immobilizes you with their {PowerName}."
+        }
+      ],
+      [
+        {
+          "name": "Immobilize",
+          "table": "Melee_Ones",
+          "attrib": "kImmobilize",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Immobilize {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Immobilizes you with their {PowerName}."
+        },
+        {
+          "name": "Immobilize",
+          "table": "Melee_PvPMez",
+          "attrib": "kImmobilize",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Immobilize {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Immobilizes you with their {PowerName}."
+        }
+      ],
+      [
+        {
+          "name": "Immobilize",
+          "table": "Melee_Ones",
+          "attrib": "kImmobilize",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Immobilize {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Immobilizes you with their {PowerName}."
+        },
+        {
+          "name": "Immobilize",
+          "table": "Melee_PvPMez",
+          "attrib": "kImmobilize",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Immobilize {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Immobilizes you with their {PowerName}."
+        }
+      ],
+      [
+        {
+          "name": "Immobilize",
+          "table": "Melee_Ones",
+          "attrib": "kImmobilize",
+          "scale": "8",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> critter eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Immobilize {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Immobilizes you with their {PowerName}."
+        },
+        {
+          "name": "Immobilize",
+          "table": "Melee_PvPMez",
+          "attrib": "kImmobilize",
+          "scale": "1",
+          "magnitude": "2",
+          "aspect": "kCur",
+          "target": "kAnyAffected",
+          "allowResistance": "kTrue",
+          "duration": "0",
+          "chance": "0",
+          "cancelOnMiss": "kTrue",
+          "boostTemplate": "kFalse",
+          "stackType": "kStack",
+          "requires": "enttype target> player eq target.isFriend? ! &&",
+          "procsPerMinute": "2.5",
+          "displayAttackerHit": "You Immobilize {PlayerDest} with your {PowerName}.",
+          "displayVictimHit": "{PlayerSource} Immobilizes you with their {PowerName}."
         }
       ]
     ]

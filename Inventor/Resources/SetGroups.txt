@@ -287,6 +287,13 @@
     "include": "Scrapper_Archetype_Sets"
   },
   {
+    "displayName": "Sentinel Archetype",
+    "groupName": "P412648444",
+    "boostsAllowed": "kDamage_Boost",
+    "conversionGroup": "ECSentinel",
+    "include": "Sentinel_Archetype_Sets"
+  },
+  {
     "displayName": "Soldiers of Arachnos Archetype",
     "groupName": "P2611858036",
     "boostsAllowed": "kDamage_Boost",
